@@ -6,7 +6,7 @@ import { Outlet } from "react-router";
 
 function Layout() {
   return (
-    <div>
+    <div className="bg-background-1 bg-fixed h-full w-full">
       <Navbar />
       <div>
         <Outlet />

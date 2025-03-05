@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .bg-background-1 {
+    background-image: url("src/assets/wood.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
