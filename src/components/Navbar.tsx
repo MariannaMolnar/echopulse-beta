@@ -51,6 +51,9 @@ function Navbar() {
             >
               Contact
             </a>
+            <button className="text-gray-300 font-bold hover:text-blue-600">
+                EN
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
