@@ -1,9 +1,12 @@
 import { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  GlobeAltIcon,
+} from "@heroicons/react/24/outline";
 import logoImg from "../assets/logo1.png";
 import Logo from "./Logo";
 import { useLanguage } from "../context/LanguageContext.tsx";
-
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,10 +76,11 @@ function Navbar() {
             {/* Language Select Button (both mobile and desktop) */}
             <div className="relative ml-6">
               <button
-                className="text-gray-300 font-bold hover:text-blue-600"
+                className="flex items-center gap-2 text-gray-300 font-bold hover:text-blue-600"
                 onClick={toggleLangDropdown}
               >
-                {language.toUpperCase()}
+                <GlobeAltIcon className="h-5 w-5" />
+                <span>{language.toUpperCase()}</span>
               </button>
             </div>
 
@@ -133,9 +137,7 @@ function Navbar() {
 
       {/* Language Menu Dropdown */}
       {langDropdownOpen && (
-        <div
-          className="absolute right-0 w-28 bg-black/70 rounded-md shadow-lg"
-        >
+        <div className="absolute right-0 w-28 bg-black/70 rounded-md shadow-lg">
           <button
             className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700"
             onClick={() => {
