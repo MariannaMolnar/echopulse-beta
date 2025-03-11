@@ -74,7 +74,7 @@ function Navbar() {
             </div>
 
             {/* Language Select Button (both mobile and desktop) */}
-            <div className="relative ml-6">
+            <div className="relative ml-3">
               <button
                 className="flex items-center gap-2 text-gray-300 font-bold hover:text-blue-600"
                 onClick={toggleLangDropdown}
@@ -86,7 +86,7 @@ function Navbar() {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-gray-300 ml-4"
+              className="md:hidden text-gray-300 ml-8"
               onClick={toggleMenu}
             >
               {isOpen ? (
@@ -101,7 +101,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute right-0 w-28 bg-black/70 rounded-md shadow-lg">
+        <div className="md:hidden absolute right-0 w-24 bg-black/70 rounded-md shadow-lg">
           <a
             href="/"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
