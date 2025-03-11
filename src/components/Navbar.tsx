@@ -29,10 +29,10 @@ function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Left Section - Logo */}
           <div className="flex items-center">
-            <div className="me-8 flex-shrink-0">
+            <div className="me-4 flex-shrink-0">
               <Logo h={50} logoSrc={logoImg} />
             </div>
-            <a href="/" className="text-2xl font-bold text-gray-500">
+            <a href="/" className="text-xl font-bold text-gray-500 whitespace-nowrap overflow-hidden">
               EchoPulse Records
             </a>
           </div>
