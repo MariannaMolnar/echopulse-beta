@@ -5,8 +5,10 @@ import {
   GlobeAltIcon,
 } from "@heroicons/react/24/outline";
 import logoImg from "../assets/logo1.png";
-import Logo from "./Logo";
+import Logo from "./Logo.tsx";
 import { useLanguage } from "../context/LanguageContext.tsx";
+import LangDropdown from "./LangDropdown.tsx";
+const LANGUAGES = [{ title: "en" }, { title: "hu" }];
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +34,10 @@ function Navbar() {
             <div className="me-4 flex-shrink-0">
               <Logo h={50} logoSrc={logoImg} />
             </div>
-            <a href="/" className="text-xl font-bold text-gray-500 whitespace-nowrap overflow-hidden">
+            <a
+              href="/"
+              className="text-xl font-bold text-gray-500 whitespace-nowrap overflow-hidden"
+            >
               EchoPulse Records
             </a>
           </div>
@@ -73,16 +78,16 @@ function Navbar() {
               </a>
             </div>
 
-            {/* Language Select Button (both mobile and desktop) */}
-            <div className="relative ml-3">
-              <button
-                className="flex items-center gap-2 text-gray-300 font-bold hover:text-blue-600"
-                onClick={toggleLangDropdown}
-              >
-                <GlobeAltIcon className="h-5 w-5" />
-                <span>{language.toUpperCase()}</span>
-              </button>
-            </div>
+            {/* Language Select Button and Dropdown (both mobile and desktop) */}
+            <LangDropdown
+              buttonText={language.toUpperCase()}
+              items={LANGUAGES}
+              setLanguage={setLanguage}
+              handleToggle={toggleLangDropdown}
+              isOpen={langDropdownOpen}
+            >
+              <GlobeAltIcon className="h-5 w-5" />
+            </LangDropdown>
 
             {/* Mobile Menu Button */}
             <button
@@ -132,30 +137,6 @@ function Navbar() {
           >
             Contact
           </a>
-        </div>
-      )}
-
-      {/* Language Menu Dropdown */}
-      {langDropdownOpen && (
-        <div className="absolute right-0 w-28 bg-black/70 rounded-md shadow-lg">
-          <button
-            className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700"
-            onClick={() => {
-              setLanguage("en");
-              setLangDropdownOpen(false);
-            }}
-          >
-            English
-          </button>
-          <button
-            className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700"
-            onClick={() => {
-              setLanguage("hu");
-              setLangDropdownOpen(false);
-            }}
-          >
-            Hungarian
-          </button>
         </div>
       )}
     </nav>
