@@ -5,10 +5,10 @@ import {
   GlobeAltIcon,
 } from "@heroicons/react/24/outline";
 import logoImg from "../assets/logo1.png";
-import Logo from "./Logo.tsx";
-import { useLanguage } from "../context/LanguageContext.tsx";
+import Logo from "./Logo";
+import { useLanguage } from "../context/LanguageContext"; 
 //import { useTranslation } from "../hooks/useTranslations.tsx";
-import LangDropdown from "./LangDropdown.tsx";
+import LangDropdown from "./LangDropdown";
 import { useTranslation } from "react-i18next";
 const LANGUAGES = [{ title: "en" }, { title: "hu" }];
 
