@@ -12,6 +12,8 @@ export const resources = {
   },
 } as const;
 
+export type SupportedLanguages = keyof typeof resources; // Export for use in LanguageContext
+
 i18next.use(initReactI18next).init({
   resources,
   lng: "en",

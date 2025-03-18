@@ -7,13 +7,17 @@ import {
 import logoImg from "../assets/logo1.png";
 import Logo from "./Logo.tsx";
 import { useLanguage } from "../context/LanguageContext.tsx";
+//import { useTranslation } from "../hooks/useTranslations.tsx";
 import LangDropdown from "./LangDropdown.tsx";
+import { useTranslation } from "react-i18next";
 const LANGUAGES = [{ title: "en" }, { title: "hu" }];
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
+  //const translate = useTranslation();
+  const { t } = useTranslation();
 
   function toggleMenu() {
     setIsOpen(!isOpen);
@@ -50,31 +54,31 @@ function Navbar() {
                 href="/"
                 className="text-gray-300 font-bold hover:text-blue-600"
               >
-                Home
+                {t("navbar.home")}
               </a>
               <a
                 href="/events"
                 className="text-gray-300 font-bold hover:text-blue-600"
               >
-                Events
+                {t("navbar.events")}
               </a>
               <a
                 href="/artists"
                 className="text-gray-300 font-bold hover:text-blue-600"
               >
-                Artists
+                {t("navbar.artists")}
               </a>
               <a
                 href="/about"
                 className="text-gray-300 font-bold hover:text-blue-600"
               >
-                About
+                {t("navbar.about")}
               </a>
               <a
                 href="/contact"
                 className="text-gray-300 font-bold hover:text-blue-600"
               >
-                Contact
+                {t("navbar.contact")}
               </a>
             </div>
 
@@ -111,31 +115,31 @@ function Navbar() {
             href="/"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
           >
-            Home
+            {t("navbar.home")}
           </a>
           <a
             href="/events"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
           >
-            Events
+            {t("navbar.events")}
           </a>
           <a
             href="/artists"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
           >
-            Artists
+            {t("navbar.artists")}
           </a>
           <a
             href="/about"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
           >
-            About
+            {t("navbar.about")}
           </a>
           <a
             href="/contact"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
           >
-            Contact
+            {t("navbar.contact")}
           </a>
         </div>
       )}
