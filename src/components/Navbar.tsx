@@ -7,7 +7,6 @@ import {
 import logoImg from "../assets/logo1.png";
 import Logo from "./Logo";
 import { useLanguage } from "../context/LanguageContext"; 
-//import { useTranslation } from "../hooks/useTranslations.tsx";
 import LangDropdown from "./LangDropdown";
 import { useTranslation } from "react-i18next";
 const LANGUAGES = [{ title: "en" }, { title: "hu" }];
@@ -16,7 +15,6 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
-  //const translate = useTranslation();
   const { t } = useTranslation();
 
   function toggleMenu() {
