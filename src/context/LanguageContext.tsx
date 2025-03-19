@@ -1,15 +1,15 @@
 import { createContext, ReactNode, useContext, useEffect, useState } from "react";
-
-export type Language = "en" | "hu";
+import { SupportedLanguages } from "../i18n";
+import i18next from "../i18n";
 
 interface LanguageContextType {
-    language: Language;
-    setLanguage: (lang: Language) => void;
+    language: SupportedLanguages;
+    setLanguage: (lang: SupportedLanguages) => void;
   }
 
 const LanguageContext = createContext<LanguageContextType>({
     language: "en",
-    setLanguage: () => {}
+    setLanguage: () => {},
 });
 
 export const useLanguage = (): LanguageContextType => {
@@ -21,12 +21,18 @@ interface LanguageProviderProps {
   }
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
-    const savedLanguage = (localStorage.getItem("language") as Language) || "en";
-    const [language, setLanguage] = useState<Language>(savedLanguage);
+    const savedLanguage = (localStorage.getItem("language") as SupportedLanguages);
+    const [language, setLanguage] = useState<SupportedLanguages>(savedLanguage);
 
     useEffect(() => {
         localStorage.setItem("language", language);
-    }, [language])
+        i18next.changeLanguage(language); // Change i18next language
+    }, [language]);
+
+    //Set initial language
+    useEffect(()=> {
+        i18next.changeLanguage(savedLanguage);
+      },[])
 
     return (
         <LanguageContext.Provider value={{ language, setLanguage }}>
