@@ -7,30 +7,34 @@
     "contact": "Kapcsolat"
   },
   "about": {
+    "title": "Rólunk",
     "intro": "Az EchoPulse Records egy 2025-ben alapított lemezkiadó, amely elkötelezett az egyedi tehetségek felfedezése és támogatása iránt. Szenvedélyesen hiszünk az autentikus zenében és a művészi kreativitásban, ezért szorosan együttműködünk előadóinkkal, hogy megvalósítsuk elképzeléseiket. A produkciótól a promócióig célunk, hogy felejthetetlen zenei élményeket teremtsünk és alakítsuk a jövő zeneiparát.",
     "mission": "Az EchoPulse Records hisz abban, hogy a zene több, mint puszta hangok összessége—ez egy erőteljes eszköz a kapcsolatteremtésre, inspirációra és történetmesélésre. Küldetésünk, hogy olyan platformot biztosítsunk, ahol az előadók szabadon kifejezhetik magukat, miközben világszerte elérik közönségüket. Célunk, hogy segítsük a művészeket a kreatív határok feszegetésében és tartós karrierjük kiépítésében.",
-    "services": [
-      {
-        "title": "Zenei produkció",
-        "description": "Professzionális felvételek, keverés és mastering."
-      },
-      {
-        "title": "Terjesztés",
-        "description": "Zenei tartalmak eljuttatása streaming platformokra és fizikai kiadványok készítése."
-      },
-      {
-        "title": "Előadói fejlesztés",
-        "description": "Az előadók hangzásának finomítása és márkaépítés."
-      },
-      {
-        "title": "Marketing & promóció",
-        "description": "Stratégiai tervezés a megfelelő közönség eléréséhez."
-      },
-      {
-        "title": "Esemény- és turnészervezés",
-        "description": "Élő fellépések és turnék koordinálása."
-      }
-    ],
+    "services": {
+      "title": "Szolgáltatásaink",
+      "list": [
+        {
+          "title": "Zenei produkció",
+          "description": "Professzionális felvételek, keverés és mastering."
+        },
+        {
+          "title": "Terjesztés",
+          "description": "Zenei tartalmak eljuttatása streaming platformokra és fizikai kiadványok készítése."
+        },
+        {
+          "title": "Előadói fejlesztés",
+          "description": "Az előadók hangzásának finomítása és márkaépítés."
+        },
+        {
+          "title": "Marketing & promóció",
+          "description": "Stratégiai tervezés a megfelelő közönség eléréséhez."
+        },
+        {
+          "title": "Esemény- és turnészervezés",
+          "description": "Élő fellépések és turnék koordinálása."
+        }
+      ]
+    },
     "team": "Az EchoPulse Records mögött egy lelkes és elkötelezett csapat áll, akik mindannyian osztoznak a zene és a kreativitás iránti szenvedélyben. A producerektől és hangmérnököktől kezdve a marketing szakértőkön át a tehetségkutatókig, minden csapattag azon dolgozik, hogy támogassa az előadókat és eljuttassa a nagyszerű zenéket a közönséghez."
   }
 }
