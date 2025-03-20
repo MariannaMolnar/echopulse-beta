@@ -16,6 +16,12 @@ function About() {
         <h2 className="hero-title">{t("about.mission.title")}</h2>
         <p className="hero-text">{t("about.mission.description")}</p>
       </section>
+
+      {/* Hero Section 4: About the Team */}
+      <section className="hero-section">
+        <h2 className="hero-title">{t("about.team.title")}</h2>
+        <p className="hero-text">{t("about.team.description")}</p>
+      </section>
     </div>
   );
 }
