@@ -19,4 +19,8 @@
   .hero-text {
     @apply text-lg;
   }
+
+  .service-card {
+    @apply bg-gray-900/80 text-white p-6 rounded-lg shadow-lg;
+  }
 }
