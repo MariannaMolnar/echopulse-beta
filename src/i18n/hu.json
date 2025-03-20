@@ -7,9 +7,14 @@
     "contact": "Kapcsolat"
   },
   "about": {
-    "title": "Rólunk",
-    "intro": "Az EchoPulse Records egy 2025-ben alapított lemezkiadó, amely elkötelezett az egyedi tehetségek felfedezése és támogatása iránt. Szenvedélyesen hiszünk az autentikus zenében és a művészi kreativitásban, ezért szorosan együttműködünk előadóinkkal, hogy megvalósítsuk elképzeléseiket. A produkciótól a promócióig célunk, hogy felejthetetlen zenei élményeket teremtsünk és alakítsuk a jövő zeneiparát.",
-    "mission": "Az EchoPulse Records hisz abban, hogy a zene több, mint puszta hangok összessége—ez egy erőteljes eszköz a kapcsolatteremtésre, inspirációra és történetmesélésre. Küldetésünk, hogy olyan platformot biztosítsunk, ahol az előadók szabadon kifejezhetik magukat, miközben világszerte elérik közönségüket. Célunk, hogy segítsük a művészeket a kreatív határok feszegetésében és tartós karrierjük kiépítésében.",
+    "intro": {
+      "title": "Rólunk",
+      "description": "Az EchoPulse Records egy 2025-ben alapított lemezkiadó, amely elkötelezett az egyedi tehetségek felfedezése és támogatása iránt. Szenvedélyesen hiszünk az autentikus zenében és a művészi kreativitásban, ezért szorosan együttműködünk előadóinkkal, hogy megvalósítsuk elképzeléseiket. A produkciótól a promócióig célunk, hogy felejthetetlen zenei élményeket teremtsünk és alakítsuk a jövő zeneiparát."
+    },
+    "mission": {
+      "title": "Missziónk",
+      "description": "Az EchoPulse Records hisz abban, hogy a zene több, mint puszta hangok összessége—ez egy erőteljes eszköz a kapcsolatteremtésre, inspirációra és történetmesélésre. Küldetésünk, hogy olyan platformot biztosítsunk, ahol az előadók szabadon kifejezhetik magukat, miközben világszerte elérik közönségüket. Célunk, hogy segítsük a művészeket a kreatív határok feszegetésében és tartós karrierjük kiépítésében."
+    },
     "services": {
       "title": "Szolgáltatásaink",
       "list": [
