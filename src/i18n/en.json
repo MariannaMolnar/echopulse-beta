@@ -40,6 +40,9 @@
         }
       ]
     },
-    "team": "Behind EchoPulse Records is a passionate team of industry professionals who share a love for music and creativity. From producers and sound engineers to marketing specialists and talent scouts, every member of our team is dedicated to supporting artists and bringing great music to the world."
+    "team": {
+      "title": "Our Team",
+      "description": "Behind EchoPulse Records is a passionate team of industry professionals who share a love for music and creativity. From producers and sound engineers to marketing specialists and talent scouts, every member of our team is dedicated to supporting artists and bringing great music to the world."
+    }
   }
 }
