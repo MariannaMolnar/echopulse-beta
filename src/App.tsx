@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import { LanguageProvider } from "./context/LanguageContext";
 import { Suspense } from "react";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
+              <Route path="/about" element={<About />} />
             </Route>
           </Routes>
         </BrowserRouter>
