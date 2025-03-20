@@ -7,9 +7,14 @@
     "contact": "Contact"
   },
   "about": {
-    "title": "About Us",
-    "intro": "Founded in 2025, EchoPulse Records is a record label dedicated to discovering and nurturing exceptional talent. With a passion for authentic music and artistic creativity, we work closely with artists to bring their visions to life. From production to promotion, our goal is to create unforgettable musical experiences and shape the future of the industry.",
-    "mission": "At EchoPulse Records, we believe that music is more than just sound—it’s a powerful way to connect, inspire, and tell stories. Our mission is to provide a platform where artists can express themselves freely while reaching audiences worldwide. We strive to push creative boundaries and support musicians in building lasting careers.",
+    "intro": {
+      "title": "About Us",
+      "description": "Founded in 2025, EchoPulse Records is a record label dedicated to discovering and nurturing exceptional talent. With a passion for authentic music and artistic creativity, we work closely with artists to bring their visions to life. From production to promotion, our goal is to create unforgettable musical experiences and shape the future of the industry."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "At EchoPulse Records, we believe that music is more than just sound—it’s a powerful way to connect, inspire, and tell stories. Our mission is to provide a platform where artists can express themselves freely while reaching audiences worldwide. We strive to push creative boundaries and support musicians in building lasting careers."
+    },
     "services": {
       "title": "Our Services",
       "list": [
