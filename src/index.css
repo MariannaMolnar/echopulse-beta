@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
   }
 
   .hero-section {
@@ -22,5 +23,14 @@
 
   .service-card {
     @apply bg-gray-900/80 text-white p-6 rounded-lg shadow-lg;
+  }
+  
+  .fade-out {
+    background-image: linear-gradient(
+      transparent 0%,
+      theme(--color-black) 80%
+    );
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, black 20%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%,  black 20% );
   }
 }
