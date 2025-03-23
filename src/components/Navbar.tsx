@@ -28,7 +28,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-black/50 shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className="bg-black shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Left Section - Logo */}
