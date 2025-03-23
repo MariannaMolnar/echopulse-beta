@@ -44,5 +44,18 @@
       "title": "Csapatunkról",
       "description": "Az EchoPulse Records mögött egy lelkes és elkötelezett csapat áll, akik mindannyian osztoznak a zene és a kreativitás iránti szenvedélyben. A producerektől és hangmérnököktől kezdve a marketing szakértőkön át a tehetségkutatókig, minden csapattag azon dolgozik, hogy támogassa az előadókat és eljuttassa a nagyszerű zenéket a közönséghez."
     }
+  },
+  "contact": {
+    "title": "Kapcsolat",
+    "description": "Kérdésed van, vagy együtt dolgoznál velünk? Vedd fel velünk a kapcsolatot, és hamarosan válaszolunk!",
+    "formLabels": {
+      "firstName": "Keresztnév",
+      "lastName": "Vezetéknév",
+      "email": "Email",
+      "subject": "Tárgy",
+      "message": "Üzenet"
+    },
+    "recaptcha": "Nem vagyok robot",
+    "sendButton": "Üzenet küldése"
   }
 }
