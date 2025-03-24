@@ -24,7 +24,7 @@
   }
   
   .hero-title {
-    @apply text-3xl font-bold mb-4;
+    @apply text-3xl font-bold mb-4 relative -top-10;
   }
   
   .hero-text {
@@ -37,11 +37,11 @@
 
   /* Contact */
   .contact-us-title {
-    @apply text-3xl font-semibold tracking-tight text-balance text-gray-300 sm:text-4xl
+    @apply text-3xl font-semibold tracking-tight text-balance text-gray-300 relative -top-10 sm:text-4xl 
   }
 
   .form-label {
-    @apply block text-base/6 font-semibold text-gray-300
+    @apply block text-base/8 font-semibold text-gray-300
   }
 
   .form-input-field {
