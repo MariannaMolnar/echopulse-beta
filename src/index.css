@@ -9,6 +9,16 @@
 
   }
 
+  .fade-out {
+    background-image: linear-gradient(
+      transparent 0%,
+      theme(--color-black) 80%
+    );
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, black 20%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%,  black 20% );
+  }
+
+  /* About Us*/
   .hero-section {
     @apply w-full max-w-6xl bg-black/60 text-gray-300 text-center py-20 px-6 rounded-xl shadow-lg;
   }
@@ -24,13 +34,18 @@
   .service-card {
     @apply bg-gray-900/80 text-white p-6 rounded-lg shadow-lg;
   }
-  
-  .fade-out {
-    background-image: linear-gradient(
-      transparent 0%,
-      theme(--color-black) 80%
-    );
-    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, black 20%);
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%,  black 20% );
+
+  /* Contact */
+  .contact-us-title {
+    @apply text-3xl font-semibold tracking-tight text-balance text-gray-300 sm:text-4xl
   }
+
+  .form-label {
+    @apply block text-base/6 font-semibold text-gray-300
+  }
+
+  .form-input-field {
+    @apply block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600
+  }
+  
 }
