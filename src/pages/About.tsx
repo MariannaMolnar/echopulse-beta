@@ -8,7 +8,7 @@ function About() {
   }[];
 
   return (
-    <div className="w-full flex flex-col items-center gap-16 py-16">
+    <div className="w-full flex flex-col items-center gap-16 px-6 py-24 sm:py-32 lg:px-8">
       {/* Hero Section 1: Introduction */}
       <section className="hero-section">
         <h2 className="hero-title">{t("about.intro.title")}</h2>
