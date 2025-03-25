@@ -5,6 +5,7 @@ import { LanguageProvider } from "./context/LanguageContext";
 import { Suspense } from "react";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import AllArtists from "./pages/AllArtists";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/artists" element={<AllArtists />} />
             </Route>
           </Routes>
         </BrowserRouter>
