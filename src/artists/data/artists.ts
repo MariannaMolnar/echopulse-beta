@@ -12,6 +12,7 @@ export interface Artist {
     facebook?: string;
     website?: string;
   };
+  image: string;
 }
 
 export const artists: Artist[] = [
@@ -27,6 +28,7 @@ export const artists: Artist[] = [
       soundCloud: "https://soundcloud.com/shadowecho",
       website: "https://shadowecho.com",
     },
+    image: "src/artists/images/01_artist-alter.jpg"
   },
   {
     id: "2",
@@ -40,6 +42,7 @@ export const artists: Artist[] = [
       soundCloud: "https://soundcloud.com/neonpulse",
       website: "https://neonpulse.de",
     },
+    image: "src/artists/images/02_artist-dj-5.jpg"
   },
   {
     id: "3",
@@ -53,6 +56,7 @@ export const artists: Artist[] = [
       soundCloud: "https://soundcloud.com/aurorabeats",
       website: "https://aurorabeats.nl",
     },
+    image: "src/artists/images/03_artist-dj-trio.jpg"
   },
   {
     id: "4",
@@ -65,6 +69,7 @@ export const artists: Artist[] = [
     socialLinks: {
       soundCloud: "https://soundcloud.com/basssiren",
     },
+    image: "src/artists/images/04_artist-dnb.jpg"
   },
   {
     id: "5",
@@ -77,6 +82,7 @@ export const artists: Artist[] = [
     socialLinks: {
       youtube: "https://youtube.com/echostring",
     },
+    image: "src/artists/images/05_artist-duo.jpg"
   },
   {
     id: "6",
@@ -89,6 +95,7 @@ export const artists: Artist[] = [
     socialLinks: {
       spotify: "https://spotify.com/windwhisper",
     },
+    image: "src/artists/images/06_artist-etno.jpg"
   },
   {
     id: "7",
@@ -101,6 +108,7 @@ export const artists: Artist[] = [
     socialLinks: {
       soundCloud: "https://soundcloud.com/psyflow",
     },
+    image: "src/artists/images/07_artist-goa-dj.jpg"
   },
   {
     id: "8",
@@ -113,6 +121,7 @@ export const artists: Artist[] = [
     socialLinks: {
       youtube: "https://youtube.com/steelresonance",
     },
+    image: "src/artists/images/08_artist-hangdrum.jpg"
   },
   {
     id: "9",
@@ -125,6 +134,7 @@ export const artists: Artist[] = [
     socialLinks: {
       facebook: "https://facebook.com/healingrhythms",
     },
+    image: "src/artists/images/09_artist-medicin-band.jpg"
   },
   {
     id: "10",
@@ -137,6 +147,7 @@ export const artists: Artist[] = [
     socialLinks: {
       spotify: "https://spotify.com/rootsmovement",
     },
+    image: "src/artists/images/10_artist-raggee.jpg"
   },
   {
     id: "11",
@@ -149,6 +160,7 @@ export const artists: Artist[] = [
     socialLinks: {
       soundCloud: "https://soundcloud.com/afropulse",
     },
+    image: "src/artists/images/11_artist-portrait.jpg"
   },
   {
     id: "12",
@@ -161,6 +173,7 @@ export const artists: Artist[] = [
     socialLinks: {
       youtube: "https://youtube.com/lunarvibes",
     },
+    image: "src/artists/images/12_artist-psy-trance-dj.jpg"
   },
   {
     id: "13",
@@ -175,6 +188,7 @@ export const artists: Artist[] = [
       spotify: "https://spotify.com/neonmirage",
       website: "https://neonmirageband.com",
     },
+    image: "src/artists/images/13_artist-psy-rock.jpg"
   },
   {
     id: "14",
@@ -189,5 +203,6 @@ export const artists: Artist[] = [
       youtube: "https://youtube.com/cyberpulse",
       website: "https://cyberpulsemusic.com",
     },
+    image: "src/artists/images/14_artist-techno-dj.jpg"
   },
 ];
