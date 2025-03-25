@@ -24,11 +24,11 @@ function About() {
       {/* Hero Section 3: Services */}
       <section className="hero-section">
         <h2 className="hero-title">{t("about.services.title")}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl p-4">
           {services.map((service, index) => (
             <div key={index} className="service-card">
-              <h3 className="text-xl font-bold">{service.title}</h3>
-              <p>{service.description}</p>
+              <h3 className="text-xl font-bold relative -top-3">{service.title}</h3>
+              <p className="relative -bottom-1">{service.description}</p>
             </div>
           ))}
         </div>
