@@ -27,20 +27,23 @@ export const artists: Artist[] = [
     socialLinks: {
       soundCloud: "https://soundcloud.com/shadowecho",
       website: "https://shadowecho.com",
+      facebook: "https://facebook.com/shadowecho",
+      spotify: "https://spotify.com/shadowecho",
     },
     image: "src/artists/images/01_artist-alter.jpg"
   },
   {
     id: "2",
-    name: "Neon Pulse",
+    name: "Pulse Trio",
     locationCountry: "Germany",
     description: {
-      en: "Neon Pulse is a dynamic DJ collective known for their high-energy electronic sets that blend house, techno, and progressive elements into an unforgettable experience.",
-      hu: "A Neon Pulse egy dinamikus DJ kollektíva, amely nagy energiájú elektronikus szettjeiről ismert, ötvözve a house, techno és progresszív elemeket egy felejthetetlen élménybe.",
+      en: "Pulse Trio is a dynamic DJ collective known for their high-energy electronic sets that blend house, techno, and progressive elements into an unforgettable experience.",
+      hu: "A Pulse Trio egy dinamikus DJ kollektíva, amely nagy energiájú elektronikus szettjeiről ismert, ötvözve a house, techno és progresszív elemeket egy felejthetetlen élménybe.",
     },
     socialLinks: {
-      soundCloud: "https://soundcloud.com/neonpulse",
-      website: "https://neonpulse.de",
+      soundCloud: "https://soundcloud.com/pulsetrio",
+      website: "https://pulsetrio.de",
+      facebook: "https://facebook.com/pulsetrio",
     },
     image: "src/artists/images/02_artist-dj-5.jpg"
   },
@@ -55,6 +58,8 @@ export const artists: Artist[] = [
     socialLinks: {
       soundCloud: "https://soundcloud.com/aurorabeats",
       website: "https://aurorabeats.nl",
+      facebook: "https://facebook.com/aurorabeats",
+      spotify: "https://spotify.com/aurorabeats",
     },
     image: "src/artists/images/03_artist-dj-trio.jpg"
   },
@@ -68,6 +73,8 @@ export const artists: Artist[] = [
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/basssiren",
+      facebook: "https://facebook.com/basssiren",
+      spotify: "https://spotify.com/basssiren",
     },
     image: "src/artists/images/04_artist-dnb.jpg"
   },
@@ -81,6 +88,7 @@ export const artists: Artist[] = [
     },
     socialLinks: {
       youtube: "https://youtube.com/echostring",
+      facebook: "https://facebook.com/echostring",
     },
     image: "src/artists/images/05_artist-duo.jpg"
   },
@@ -94,6 +102,7 @@ export const artists: Artist[] = [
     },
     socialLinks: {
       spotify: "https://spotify.com/windwhisper",
+      facebook: "https://facebook.com/windwhisper",
     },
     image: "src/artists/images/06_artist-etno.jpg"
   },
@@ -107,6 +116,8 @@ export const artists: Artist[] = [
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/psyflow",
+      facebook: "https://facebook.com/psyflow",
+      spotify: "https://spotify.com/psyflow",
     },
     image: "src/artists/images/07_artist-goa-dj.jpg"
   },
@@ -120,6 +131,8 @@ export const artists: Artist[] = [
     },
     socialLinks: {
       youtube: "https://youtube.com/steelresonance",
+      facebook: "https://facebook.com/steelresonance",
+      spotify: "https://spotify.com/steelresonance",
     },
     image: "src/artists/images/08_artist-hangdrum.jpg"
   },
@@ -133,6 +146,7 @@ export const artists: Artist[] = [
     },
     socialLinks: {
       facebook: "https://facebook.com/healingrhythms",
+      spotify: "https://spotify.com/healingrhythms",
     },
     image: "src/artists/images/09_artist-medicin-band.jpg"
   },
@@ -146,6 +160,7 @@ export const artists: Artist[] = [
     },
     socialLinks: {
       spotify: "https://spotify.com/rootsmovement",
+      facebook: "https://facebook.com/rootsmovement",
     },
     image: "src/artists/images/10_artist-raggee.jpg"
   },
@@ -159,6 +174,7 @@ export const artists: Artist[] = [
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/afropulse",
+      facebook: "https://facebook.com/afropulse",
     },
     image: "src/artists/images/11_artist-portrait.jpg"
   },
@@ -172,21 +188,25 @@ export const artists: Artist[] = [
     },
     socialLinks: {
       youtube: "https://youtube.com/lunarvibes",
+      facebook: "https://facebook.com/lunarvibes",
+      spotify: "https://spotify.com/lunarvibes",
     },
     image: "src/artists/images/12_artist-psy-trance-dj.jpg"
   },
   {
     id: "13",
-    name: "Neon Mirage",
+    name: "PsyMirage",
     locationCountry: "Australia",
     description: {
-      en: "Neon Mirage is a psychedelic rock band known for their surreal soundscapes, intricate guitar riffs, and hypnotic rhythms. The four-member group blends vintage 70s influences with modern experimental rock, creating an immersive sonic experience.",
-      hu: "A Neon Mirage egy pszichedelikus rockzenekar, amely szürreális hangzásvilágáról, összetett gitárriffjeiről és hipnotikus ritmusairól ismert. A négytagú együttes a 70-es évek vintage hatásait ötvözi a modern kísérleti rockkal, így teremtve magával ragadó zenei élményt.",
+      en: "PsyMirage is a psychedelic rock band known for their surreal soundscapes, intricate guitar riffs, and hypnotic rhythms. The four-member group blends vintage 70s influences with modern experimental rock, creating an immersive sonic experience.",
+      hu: "A PsyMirage egy pszichedelikus rockzenekar, amely szürreális hangzásvilágáról, összetett gitárriffjeiről és hipnotikus ritmusairól ismert. A négytagú együttes a 70-es évek vintage hatásait ötvözi a modern kísérleti rockkal, így teremtve magával ragadó zenei élményt.",
     },
     socialLinks: {
-      soundCloud: "https://soundcloud.com/neonmirage",
-      spotify: "https://spotify.com/neonmirage",
-      website: "https://neonmirageband.com",
+      soundCloud: "https://soundcloud.com/psymirage",
+      spotify: "https://spotify.com/psymirage",
+      website: "https://psynmirageband.com",
+      youtube: "https://youtube.com/psymirage",
+      facebook: "https://facebook.com/psymirage",
     },
     image: "src/artists/images/13_artist-psy-rock.jpg"
   },
@@ -201,6 +221,7 @@ export const artists: Artist[] = [
     socialLinks: {
       soundCloud: "https://soundcloud.com/cyberpulse",
       youtube: "https://youtube.com/cyberpulse",
+      facebook: "https://facebook.com/cyberpulse",
       website: "https://cyberpulsemusic.com",
     },
     image: "src/artists/images/14_artist-techno-dj.jpg"
