@@ -57,5 +57,12 @@
     },
     "recaptcha": "Nem vagyok robot",
     "sendButton": "Üzenet küldése"
+  },
+  "allArtists": {
+    "title": "Zenei előadóink",
+    "search": {
+      "placeholder": "Keress név szerint",
+      "buttonText": "Keresés"
+    }
   }
 }

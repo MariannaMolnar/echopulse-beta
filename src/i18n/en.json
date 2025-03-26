@@ -57,5 +57,12 @@
     },
     "recaptcha": "I'm not a robot",
     "sendButton": "Send Message"
+  },
+  "allArtists": {
+    "title": "Our Artists",
+    "search": {
+      "placeholder": "Search by artist name",
+      "buttonText": "Search"
+    }
   }
 }
