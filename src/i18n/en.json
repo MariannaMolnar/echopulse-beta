@@ -59,6 +59,10 @@
     "sendButton": "Send Message"
   },
   "allArtists": {
-    "title": "Our Artists"
+    "title": "Our Artists",
+    "search": {
+      "placeholder": "Search by artist name",
+      "buttonText": "Search"
+    }
   }
 }

@@ -59,6 +59,10 @@
     "sendButton": "Üzenet küldése"
   },
   "allArtists": {
-    "title": "Zenei előadóink"
+    "title": "Zenei előadóink",
+    "search": {
+      "placeholder": "Keress név szerint",
+      "buttonText": "Keresés"
+    }
   }
 }
