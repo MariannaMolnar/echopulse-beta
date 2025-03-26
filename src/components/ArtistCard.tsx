@@ -2,12 +2,15 @@ import { Artist } from "../artists/data/artists";
 import { FaFacebook, FaSpotify, FaYoutube, FaGlobe } from "react-icons/fa";
 import { BsGlobe2 } from "react-icons/bs";
 import { PiSoundcloudLogoFill } from "react-icons/pi";
+import { useLanguage } from "../context/LanguageContext";
 
 type Props = {
   artist: Artist;
 };
 
 function ArtistCard({ artist }: Props) {
+    const { language } = useLanguage();
+
   return (
     <div className="artist-card">
       {/* Artist image */}
@@ -18,7 +21,7 @@ function ArtistCard({ artist }: Props) {
       <div className="artist-info-container">
         <div className="artist-info">
           <p className="artist-name">{artist.name.toUpperCase()}</p>
-          <p className="artist-country">{artist.locationCountry}</p>
+          <p className="artist-country">{artist.locationCountry[language as keyof typeof artist.locationCountry]}</p>
         </div>
         {/* Genre tags - to be implemented */}
       </div>
