@@ -57,5 +57,8 @@
     },
     "recaptcha": "I'm not a robot",
     "sendButton": "Send Message"
+  },
+  "allArtists": {
+    "title": "Our Artists"
   }
 }
