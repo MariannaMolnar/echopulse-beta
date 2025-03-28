@@ -51,27 +51,31 @@
 
   /* Artist card */
   .artist-card {
-    @apply relative bg-[#f0edf2] overflow-hidden rounded-md text-black border-[1px] border-[#140b22] /*transition-opacity duration-300 ease-out transition-transform duration-800 cubic-bezier-[0.45,0.05,0.55,0.95] transition-max-h duration-[1200ms] ease-out transition-shadow duration-[120ms] ease-out transition-border-color duration-[120ms] ease-out pb-[45px] opacity-85 group*/ 
+    @apply flex flex-col bg-[#f0edf2] overflow-hidden rounded-md text-black border-[1px] border-[#140b22]
   }
 
   .artist-image-container {
-    @apply relative overflow-hidden h-full w-full
+    @apply overflow-hidden w-full flex-shrink-0
   }
 
   .artist-image {
-    @apply w-full h-auto block transition-transform duration-300 ease-in-out group-hover:scale-105
+    @apply w-full h-auto block transition-transform duration-300 ease-in-out group-hover:scale-105 
   }
 
   .artist-info-container {
-    @apply flex justify-between items-start px-5 pt-5 pb-0 bottom-0 left-0 w-full bg-black/50 text-white p-4
+    @apply w-full flex justify-between items-start p-3 flex-1 bg-black/50 text-white flex-shrink-0
   }
 
   .artist-name {
-    @apply text-xl font-bold mb-2
+    @apply text-lg font-bold mb-2
+  }
+
+  .artist-country {
+    @apply text-base
   }
 
   .artist-social-links-contanier {
-    @apply flex justify-end bottom-0 right-0 px-3 pt-0 pb-3 bg-black/50 text-white gap-3
+    @apply w-full flex justify-end gap-3 px-3 pb-3 bg-black/50 text-white flex-shrink-0
   }
 
   .artist-social-link {
