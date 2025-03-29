@@ -12,10 +12,11 @@ function ArtistCard({ artist }: Props) {
     const { language } = useLanguage();
 
   return (
-    <div className="artist-card">
+    <div className="artist-card group">
       {/* Artist image */}
       <div className="artist-image-container">
         <img src={artist.image} className="artist-image" />
+        <p className="artist-name-overlay">{artist.name.toUpperCase()}</p>
       </div>
       {/* Artist info */}
       <div className="artist-info-container">
