@@ -51,38 +51,53 @@
 
   /* Artist card */
   .artist-card {
-    @apply flex flex-col bg-[#f0edf2] overflow-hidden rounded-md text-black border-[1px] border-[#140b22]
+    @apply flex flex-col bg-[#f0edf2] overflow-hidden rounded-md text-black border-[1px] border-[#140b22];
   }
 
   .artist-image-container {
-    @apply overflow-hidden w-full flex-shrink-0
+    @apply relative overflow-hidden w-full flex-shrink-0;
   }
 
   .artist-image {
-    @apply w-full h-auto block transition-transform duration-300 ease-in-out group-hover:scale-105 
+    @apply w-full h-auto block transition-transform duration-300 ease-in-out group-hover:scale-105;
+    @apply group-hover:brightness-95 transition-all;
+    @apply brightness-75 sm:brightness-100;
+  }
+
+  .artist-name-overlay {
+    @apply block;
+    @apply sm:hidden;
+    /* --- Positioning & Centering --- */
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+
+    /* --- Styling --- */
+    @apply text-white font-semibold text-[4.5vw] uppercase [text-shadow:0px_0px_2px_black] w-full p-[5px] text-center;
+
+    /* Prevent blocking clicks on image */
+    @apply pointer-events-none;
   }
 
   .artist-info-container {
-    @apply w-full flex justify-between items-start p-3 flex-1 bg-black/50 text-white flex-shrink-0
+    @apply hidden sm:flex w-full justify-between items-start p-3 flex-1 bg-black/50 text-white flex-shrink-0;
   }
 
   .artist-name {
-    @apply text-lg font-bold mb-2
+    @apply text-lg font-bold mb-2;
   }
 
   .artist-country {
-    @apply text-base
+    @apply text-base;
   }
 
   .artist-social-links-contanier {
-    @apply w-full flex justify-end gap-3 px-3 pb-3 bg-black/50 text-white flex-shrink-0
+    @apply hidden sm:flex mt-auto w-full justify-end gap-3 px-3 pb-3 bg-black/50 text-white flex-shrink-0;
   }
 
   .artist-social-link {
-    @apply inline-flex items-center justify-center text-center text-lg
+    @apply inline-flex items-center justify-center text-center text-lg;
   }
 
   .artist-social-icon {
-    @apply text-[1.3em]
+    @apply text-[1.3em];
   }
 }
