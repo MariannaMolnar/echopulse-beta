@@ -4,7 +4,7 @@ import ArtistCard from "../components/ArtistCard";
 
 function AllArtists() {
   const { t } = useTranslation();
-  
+
   return (
     <div className="isolate w-full flex flex-col items-center px-6 py-24 sm:py-32 lg:px-8">
       <div className="w-full bg-black/60 text-gray-300 py-20 px-6 rounded-xl shadow-lg">
@@ -15,12 +15,11 @@ function AllArtists() {
 
         {/* Filter and search - to be implemented later */}
         {/* Artist cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-fr">
-            {artists.map(( artist ) => (
-                <ArtistCard key={artist.id} artist={artist}/>
-            ))}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0.5 md:gap-5 lg:gap-6 auto-rows-fr">
+          {artists.map((artist) => (
+            <ArtistCard key={artist.id} artist={artist} />
+          ))}
         </div>
-        
       </div>
     </div>
   );
