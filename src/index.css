@@ -99,5 +99,6 @@
 
   .artist-social-icon {
     @apply text-[1.3em];
+    @apply brightness-75 hover:brightness-100
   }
 }
