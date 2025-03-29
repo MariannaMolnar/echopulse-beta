@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { artists } from "../artists/data/artists";
+import ArtistCard from "../components/ArtistCard";
 
 function AllArtists() {
   const { t } = useTranslation();
@@ -11,8 +13,13 @@ function AllArtists() {
           <h2 className="allArtists-title">{t("allArtists.title")}</h2>
         </div>
 
-        {/* Filter and search - to be implemented */}
-        
+        {/* Filter and search - to be implemented later */}
+        {/* Artist cards */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0.5 md:gap-5 lg:gap-6 auto-rows-fr">
+          {artists.map((artist) => (
+            <ArtistCard key={artist.id} artist={artist} />
+          ))}
+        </div>
       </div>
     </div>
   );
