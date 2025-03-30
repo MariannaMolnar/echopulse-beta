@@ -1,22 +1,31 @@
 import { JSX, ReactNode } from "react";
 import { SupportedLanguages } from "../i18n";
 
-interface LangDropdownProps {
-  buttonText: string;
-  items: {
-      title: string;
-      url?: string;
-      icon?: JSX.Element;
-      action?: () => void;
-    }[];
-    setLanguage : (lang: SupportedLanguages) => void;
-    handleToggle: () => void;
-    isOpen: boolean;
-    children: ReactNode;
+interface ItemType {
+  title: SupportedLanguages;
+  countryCode: string;
+  url?: string;
+  icon?: JSX.Element;
+  action?: () => void;
 }
 
-function LangDropdown({ buttonText, items, setLanguage, handleToggle, isOpen, children }: LangDropdownProps) {
+interface LangDropdownProps {
+  buttonText: string;
+  items: ItemType[];
+  setLanguage: (lang: SupportedLanguages) => void;
+  handleToggle: () => void;
+  isOpen: boolean;
+  children: ReactNode;
+}
 
+function LangDropdown({
+  buttonText,
+  items,
+  setLanguage,
+  handleToggle,
+  isOpen,
+  children,
+}: LangDropdownProps) {
   return (
     <div className="relative">
       <button
@@ -36,8 +45,8 @@ function LangDropdown({ buttonText, items, setLanguage, handleToggle, isOpen, ch
                 key={index}
                 className="relative flex justify-center gap-2 px-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:rounded-md"
                 onClick={() => {
-                    setLanguage(item.title as SupportedLanguages)
-                    handleToggle();
+                  setLanguage(item.title);
+                  handleToggle();
                 }}
               >
                 {item.title.toUpperCase()}
