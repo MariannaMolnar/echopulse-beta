@@ -3,6 +3,7 @@ import { FaFacebook, FaSpotify, FaYoutube, FaGlobe } from "react-icons/fa";
 import { BsGlobe2 } from "react-icons/bs";
 import { PiSoundcloudLogoFill } from "react-icons/pi";
 import { useLanguage } from "../context/LanguageContext";
+import ReactCountryFlag from "react-country-flag";
 
 type Props = {
   artist: Artist;
@@ -22,9 +23,24 @@ function ArtistCard({ artist }: Props) {
       <div className="artist-info-container">
         <div className="artist-info">
           <p className="artist-name">{artist.name.toUpperCase()}</p>
-          <p className="artist-country">
-            {artist.country.name[language as keyof typeof artist.country.name]}
-          </p>
+          {/* Container for Flag + Country Name */}
+          <div className="flex items-center gap-2">
+            <div className="inline-flex items-center justify-center w-5 h-4 shrink-0">
+              <ReactCountryFlag
+                countryCode={artist.country.code}
+                svg
+                style={{ width: "2em", height: "1em" }}
+                className="rounded-xs"
+              />
+            </div>
+            <p className="artist-country">
+              {
+                artist.country.name[
+                  language as keyof typeof artist.country.name
+                ]
+              }
+            </p>
+          </div>
         </div>
         {/* Genre tags - to be implemented */}
       </div>
