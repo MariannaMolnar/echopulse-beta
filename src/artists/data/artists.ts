@@ -6,7 +6,10 @@ type LanguageSpecificString = {
 export interface Artist {
   id: string;
   name: string;
-  locationCountry: LanguageSpecificString;
+  country: {
+    name: LanguageSpecificString;
+    code: string;
+  };
   description: LanguageSpecificString;
   socialLinks: {
     soundCloud?: string;
@@ -22,9 +25,12 @@ export const artists: Artist[] = [
   {
     id: "1",
     name: "Shadow Echo",
-    locationCountry: { 
-      en: "United Kingdom", 
-      hu: "Egyesült Királyság" 
+    country: {
+      name: {
+        en: "United Kingdom",
+        hu: "Egyesült Királyság",
+      },
+      code: "GB",
     },
     description: {
       en: "Shadow Echo is an alternative musician blending deep lyrical storytelling with ambient rock textures. His music takes inspiration from the echoes of personal experiences and the raw energy of post-rock.",
@@ -41,9 +47,12 @@ export const artists: Artist[] = [
   {
     id: "2",
     name: "Pulse Trio",
-    locationCountry: { 
-      en: "Germany", 
-      hu: "Németország" 
+    country: {
+      name: {
+        en: "Germany",
+        hu: "Németország",
+      },
+      code: "DE",
     },
     description: {
       en: "Pulse Trio is a dynamic DJ collective known for their high-energy electronic sets that blend house, techno, and progressive elements into an unforgettable experience.",
@@ -59,9 +68,12 @@ export const artists: Artist[] = [
   {
     id: "3",
     name: "Aurora Beats",
-    locationCountry: { 
-      en: "Netherlands", 
-      hu: "Hollandia" 
+    country: {
+      name: {
+        en: "Netherlands",
+        hu: "Hollandia",
+      },
+      code: "NL",
     },
     description: {
       en: "Aurora Beats is an electrifying DJ trio that merges ethereal vocals with deep, pulsating basslines, creating an immersive dancefloor journey.",
@@ -78,9 +90,12 @@ export const artists: Artist[] = [
   {
     id: "4",
     name: "Bass Siren",
-    locationCountry: { 
-      en: "Canada", 
-      hu: "Kanada" 
+    country: {
+      name: {
+        en: "Canada",
+        hu: "Kanada",
+      },
+      code: "CA",
     },
     description: {
       en: "Bass Siren is a drum and bass DJ whose hypnotic beats and fierce energy have captivated audiences worldwide, bringing underground rhythms to the forefront.",
@@ -96,9 +111,12 @@ export const artists: Artist[] = [
   {
     id: "5",
     name: "Echo & String",
-    locationCountry: { 
-      en: "France", 
-      hu: "Franciaország" 
+    country: {
+      name: {
+        en: "France",
+        hu: "Franciaország",
+      },
+      code: "FR",
     },
     description: {
       en: "Echo & String is an acoustic duo known for their soul-stirring performances, blending heartfelt vocals with intricate guitar melodies.",
@@ -113,9 +131,12 @@ export const artists: Artist[] = [
   {
     id: "6",
     name: "Wind Whisper",
-    locationCountry: { 
-      en: "Hungary", 
-      hu: "Magyarország" 
+    country: {
+      name: {
+        en: "Hungary",
+        hu: "Magyarország",
+      },
+      code: "HU",
     },
     description: {
       en: "Wind Whisper is a solo ethno musician whose flute compositions evoke the spirit of ancient traditions and nature’s harmony.",
@@ -130,9 +151,12 @@ export const artists: Artist[] = [
   {
     id: "7",
     name: "Psyflow",
-    locationCountry: { 
-      en: "Israel", 
-      hu: "Izrael" 
+    country: {
+      name: {
+        en: "Israel",
+        hu: "Izrael",
+      },
+      code: "IL",
     },
     description: {
       en: "Psyflow is a Goa DJ known for his hypnotic beats and euphoric soundscapes that transport listeners to another dimension.",
@@ -148,9 +172,12 @@ export const artists: Artist[] = [
   {
     id: "8",
     name: "Steel Resonance",
-    locationCountry: { 
-      en: "Australia", 
-      hu: "Ausztrália" 
+    country: {
+      name: {
+        en: "Australia",
+        hu: "Ausztrália",
+      },
+      code: "AU",
     },
     description: {
       en: "Steel Resonance is a hang drum musician who crafts mesmerizing rhythms that soothe the soul and awaken the senses.",
@@ -166,9 +193,12 @@ export const artists: Artist[] = [
   {
     id: "9",
     name: "Healing Rhythms",
-    locationCountry: { 
-      en: "Brazil", 
-      hu: "Brazília" 
+    country: {
+      name: {
+        en: "Brazil",
+        hu: "Brazília",
+      },
+      code: "BR",
     },
     description: {
       en: "Healing Rhythms is a medicine band that fuses traditional indigenous sounds with modern spiritual music to create deeply transformative experiences.",
@@ -183,9 +213,12 @@ export const artists: Artist[] = [
   {
     id: "10",
     name: "Roots Movement",
-    locationCountry: { 
-      en: "Jamaica", 
-      hu: "Jamaica" 
+    country: {
+      name: {
+        en: "Jamaica",
+        hu: "Jamaica",
+      },
+      code: "JM",
     },
     description: {
       en: "Roots Movement is a reggae band bringing conscious lyrics and groovy rhythms to uplift the spirit and unite people.",
@@ -200,9 +233,12 @@ export const artists: Artist[] = [
   {
     id: "11",
     name: "Afro Pulse",
-    locationCountry: { 
-      en: "South Africa", 
-      hu: "Dél-afrikai Köztársaság" 
+    country: {
+      name: {
+        en: "South Africa",
+        hu: "Dél-afrikai Köztársaság",
+      },
+      code: "ZA",
     },
     description: {
       en: "An Afro house DJ blending deep tribal beats with uplifting percussions.",
@@ -217,9 +253,12 @@ export const artists: Artist[] = [
   {
     id: "12",
     name: "Lunar Vibes",
-    locationCountry: { 
-      en: "Portugal", 
-      hu: "Portugália" 
+    country: {
+      name: {
+        en: "Portugal",
+        hu: "Portugália",
+      },
+      code: "PT",
     },
     description: {
       en: "A psy-trance DJ with an atmospheric and energetic sound, taking audiences on a deep cosmic journey.",
@@ -235,9 +274,12 @@ export const artists: Artist[] = [
   {
     id: "13",
     name: "PsyMirage",
-    locationCountry: { 
-      en: "Australia", 
-      hu: "Ausztrália" 
+    country: {
+      name: {
+        en: "Australia",
+        hu: "Ausztrália",
+      },
+      code: "AU",
     },
     description: {
       en: "PsyMirage is a psychedelic rock band known for their surreal soundscapes, intricate guitar riffs, and hypnotic rhythms. The four-member group blends vintage 70s influences with modern experimental rock, creating an immersive sonic experience.",
@@ -255,9 +297,12 @@ export const artists: Artist[] = [
   {
     id: "14",
     name: "CyberPulse",
-    locationCountry: { 
-      en: "Belgium", 
-      hu: "Belgium" 
+    country: {
+      name: {
+        en: "Belgium",
+        hu: "Belgium",
+      },
+      code: "BE",
     },
     description: {
       en: "CyberPulse is a techno DJ and producer crafting futuristic, high-energy beats infused with deep basslines and hypnotic synths. His sets are a fusion of underground warehouse vibes and cutting-edge electronic innovation.",

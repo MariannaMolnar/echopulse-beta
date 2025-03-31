@@ -6,10 +6,14 @@ import {
 } from "@heroicons/react/24/outline";
 import logoImg from "../assets/logo1.png";
 import Logo from "./Logo";
-import { useLanguage } from "../context/LanguageContext"; 
+import { useLanguage } from "../context/LanguageContext";
 import LangDropdown from "./LangDropdown";
 import { useTranslation } from "react-i18next";
-const LANGUAGES = [{ title: "en" }, { title: "hu" }];
+import { SupportedLanguages } from "../i18n";
+const LANGUAGES: { title: SupportedLanguages; countryCode: string }[] = [
+  { title: "en", countryCode: "GB" },
+  { title: "hu", countryCode: "HU" },
+];
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
