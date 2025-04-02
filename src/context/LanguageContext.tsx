@@ -2,13 +2,15 @@ import { createContext, ReactNode, useContext, useEffect, useState } from "react
 import { SupportedLanguages } from "../i18n";
 import i18next from "../i18n";
 
+const DEFAULT_LANGUAGE: SupportedLanguages = "en";
+
 interface LanguageContextType {
     language: SupportedLanguages;
     setLanguage: (lang: SupportedLanguages) => void;
   }
 
 const LanguageContext = createContext<LanguageContextType>({
-    language: "en",
+    language: DEFAULT_LANGUAGE,
     setLanguage: () => {},
 });
 
@@ -21,8 +23,8 @@ interface LanguageProviderProps {
   }
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
-    const savedLanguage = (localStorage.getItem("language") as SupportedLanguages);
-    const [language, setLanguage] = useState<SupportedLanguages>(savedLanguage);
+    const savedLanguage = localStorage.getItem("language") as SupportedLanguages;
+    const [language, setLanguage] = useState<SupportedLanguages>(savedLanguage ?? DEFAULT_LANGUAGE);
 
     useEffect(() => {
         localStorage.setItem("language", language);
