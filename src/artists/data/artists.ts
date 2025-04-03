@@ -1,3 +1,19 @@
+import artistImg1 from "../images/01_artist-alter.jpg"
+import artistImg2 from "../images/02_artist-dj-5.jpg"
+import artistImg3 from "../images/03_artist-dj-trio.jpg"
+import artistImg4 from "../images/04_artist-dnb.jpg"
+import artistImg5 from "../images/05_artist-duo.jpg"
+import artistImg6 from "../images/06_artist-etno.jpg"
+import artistImg7 from "../images/07_artist-goa-dj.jpg"
+import artistImg8 from "../images/08_artist-hangdrum.jpg"
+import artistImg9 from "../images/09_artist-medicin-band.jpg"
+import artistImg10 from "../images/10_artist-raggee.jpg"
+import artistImg11 from "../images/11_artist-portrait.jpg"
+import artistImg12 from "../images/12_artist-psy-trance-dj.jpg"
+import artistImg13 from "../images/13_artist-psy-rock.jpg"
+import artistImg14 from "../images/14_artist-techno-dj.jpg"
+
+
 type LanguageSpecificString = {
   en: string;
   hu: string;
@@ -42,7 +58,7 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/shadowecho",
       spotify: "https://spotify.com/shadowecho",
     },
-    image: "src/artists/images/01_artist-alter.jpg",
+    image: artistImg1,
   },
   {
     id: "2",
@@ -63,7 +79,7 @@ export const artists: Artist[] = [
       website: "https://pulsetrio.de",
       facebook: "https://facebook.com/pulsetrio",
     },
-    image: "src/artists/images/02_artist-dj-5.jpg",
+    image: artistImg2,
   },
   {
     id: "3",
@@ -85,7 +101,7 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/aurorabeats",
       spotify: "https://spotify.com/aurorabeats",
     },
-    image: "src/artists/images/03_artist-dj-trio.jpg",
+    image: artistImg3,
   },
   {
     id: "4",
@@ -106,7 +122,7 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/basssiren",
       spotify: "https://spotify.com/basssiren",
     },
-    image: "src/artists/images/04_artist-dnb.jpg",
+    image: artistImg4,
   },
   {
     id: "5",
@@ -126,7 +142,7 @@ export const artists: Artist[] = [
       youtube: "https://youtube.com/echostring",
       facebook: "https://facebook.com/echostring",
     },
-    image: "src/artists/images/05_artist-duo.jpg",
+    image: artistImg5,
   },
   {
     id: "6",
@@ -146,7 +162,7 @@ export const artists: Artist[] = [
       spotify: "https://spotify.com/windwhisper",
       facebook: "https://facebook.com/windwhisper",
     },
-    image: "src/artists/images/06_artist-etno.jpg",
+    image: artistImg6,
   },
   {
     id: "7",
@@ -167,7 +183,7 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/psyflow",
       spotify: "https://spotify.com/psyflow",
     },
-    image: "src/artists/images/07_artist-goa-dj.jpg",
+    image: artistImg7,
   },
   {
     id: "8",
@@ -188,7 +204,7 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/steelresonance",
       spotify: "https://spotify.com/steelresonance",
     },
-    image: "src/artists/images/08_artist-hangdrum.jpg",
+    image: artistImg8,
   },
   {
     id: "9",
@@ -208,7 +224,7 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/healingrhythms",
       spotify: "https://spotify.com/healingrhythms",
     },
-    image: "src/artists/images/09_artist-medicin-band.jpg",
+    image: artistImg9,
   },
   {
     id: "10",
@@ -228,7 +244,7 @@ export const artists: Artist[] = [
       spotify: "https://spotify.com/rootsmovement",
       facebook: "https://facebook.com/rootsmovement",
     },
-    image: "src/artists/images/10_artist-raggee.jpg",
+    image: artistImg10,
   },
   {
     id: "11",
@@ -248,7 +264,7 @@ export const artists: Artist[] = [
       soundCloud: "https://soundcloud.com/afropulse",
       facebook: "https://facebook.com/afropulse",
     },
-    image: "src/artists/images/11_artist-portrait.jpg",
+    image: artistImg11,
   },
   {
     id: "12",
@@ -269,7 +285,7 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/lunarvibes",
       spotify: "https://spotify.com/lunarvibes",
     },
-    image: "src/artists/images/12_artist-psy-trance-dj.jpg",
+    image: artistImg12,
   },
   {
     id: "13",
@@ -292,7 +308,7 @@ export const artists: Artist[] = [
       youtube: "https://youtube.com/psymirage",
       facebook: "https://facebook.com/psymirage",
     },
-    image: "src/artists/images/13_artist-psy-rock.jpg",
+    image: artistImg13,
   },
   {
     id: "14",
@@ -314,6 +330,6 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/cyberpulse",
       website: "https://cyberpulsemusic.com",
     },
-    image: "src/artists/images/14_artist-techno-dj.jpg",
+    image: artistImg14,
   },
 ];
