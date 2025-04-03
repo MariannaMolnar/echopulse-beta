@@ -1,4 +1,4 @@
-import { Artist } from "../artists/data/artists";
+import { Artist } from "../data/artists";
 import { FaFacebook, FaSpotify, FaYoutube, FaGlobe } from "react-icons/fa";
 import { BsGlobe2 } from "react-icons/bs";
 import { PiSoundcloudLogoFill } from "react-icons/pi";

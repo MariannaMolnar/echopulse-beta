@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { artists } from "../artists/data/artists";
+import { artists } from "../data/artists";
 import ArtistCard from "../components/ArtistCard";
 
 function AllArtists() {
