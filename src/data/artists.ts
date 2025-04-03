@@ -14,7 +14,7 @@ import artistImg13 from "../images/artists/13_artist-psy-rock.jpg"
 import artistImg14 from "../images/artists/14_artist-techno-dj.jpg"
 
 
-type LanguageSpecificString = {
+export type LanguageSpecificString = {
   en: string;
   hu: string;
 };
