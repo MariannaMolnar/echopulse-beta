@@ -10,6 +10,7 @@ import { useLanguage } from "../context/LanguageContext";
 import LangDropdown from "./LangDropdown";
 import { useTranslation } from "react-i18next";
 import { SupportedLanguages } from "../i18n";
+import { Link } from "react-router-dom";
 const LANGUAGES: { title: SupportedLanguages; countryCode: string }[] = [
   { title: "en", countryCode: "GB" },
   { title: "hu", countryCode: "HU" },
@@ -52,36 +53,36 @@ function Navbar() {
           <div className="flex items-center">
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-6 me-6">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="text-gray-300 font-bold hover:text-blue-600"
               >
                 {t("navbar.home")}
-              </a>
-              <a
-                href="/events"
+              </Link>
+              <Link
+                to="/events"
                 className="text-gray-300 font-bold hover:text-blue-600"
               >
                 {t("navbar.events")}
-              </a>
-              <a
-                href="/artists"
+              </Link>
+              <Link
+                to="/artists"
                 className="text-gray-300 font-bold hover:text-blue-600"
               >
                 {t("navbar.artists")}
-              </a>
-              <a
-                href="/about"
+              </Link>
+              <Link
+                to="/about"
                 className="text-gray-300 font-bold hover:text-blue-600"
               >
                 {t("navbar.about")}
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="text-gray-300 font-bold hover:text-blue-600"
               >
                 {t("navbar.contact")}
-              </a>
+              </Link>
             </div>
 
             {/* Language Select Button and Dropdown (both mobile and desktop) */}
@@ -113,36 +114,36 @@ function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden absolute right-0 w-24 bg-black/70 rounded-md shadow-lg">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
           >
             {t("navbar.home")}
-          </a>
-          <a
-            href="/events"
+          </Link>
+          <Link
+            to="/events"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
           >
             {t("navbar.events")}
-          </a>
-          <a
-            href="/artists"
+          </Link>
+          <Link
+            to="/artists"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
           >
             {t("navbar.artists")}
-          </a>
-          <a
-            href="/about"
+          </Link>
+          <Link
+            to="/about"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
           >
             {t("navbar.about")}
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
           >
             {t("navbar.contact")}
-          </a>
+          </Link>
         </div>
       )}
     </nav>
