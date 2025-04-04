@@ -67,8 +67,8 @@
   },
   "events": {
     "title": "Events",
-    "subtitle_next": "Up Next",
-    "subtitle_future": "Future events",
-    "subtitle_past": "Past events"
+    "subtitleNext": "Up Next",
+    "subtitleFuture": "Future events",
+    "subtitlePast": "Past events"
   }
 }

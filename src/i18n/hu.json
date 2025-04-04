@@ -67,8 +67,8 @@
   },
   "events": {
     "title": "Események",
-    "subtitle_next": "Hamarosan",
-    "subtitle_future": "Közelgő események",
-    "subtitle_past": "Korábbi események"
+    "subtitleNext": "Hamarosan",
+    "subtitleFuture": "Közelgő események",
+    "subtitlePast": "Korábbi események"
   }
 }
