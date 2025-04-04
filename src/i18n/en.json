@@ -64,5 +64,11 @@
       "placeholder": "Search by artist name",
       "buttonText": "Search"
     }
+  },
+  "events": {
+    "title": "Events",
+    "subtitle_next": "Up Next",
+    "subtitle_future": "Future events",
+    "subtitle_past": "Past events"
   }
 }

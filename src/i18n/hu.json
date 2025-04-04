@@ -64,5 +64,11 @@
       "placeholder": "Keress név szerint",
       "buttonText": "Keresés"
     }
+  },
+  "events": {
+    "title": "Események",
+    "subtitle_next": "Hamarosan",
+    "subtitle_future": "Közelgő események",
+    "subtitle_past": "Korábbi események"
   }
 }
