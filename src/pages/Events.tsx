@@ -60,18 +60,24 @@ function Events() {
         </div>
 
         {/* Up Next section */}
-        <div>
-          <h2>{t("events.subtitleNext")}</h2>
-          <div className="up-next-cards-container"></div>
+        <div className="mt-12 mb-8 px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-200">{t("events.subtitleNext")}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {/* Next event cards */}
+          </div>
         </div>
 
         {/* Filters */}
-        <div className="filters">
+        <div className="flex items-center gap-4 px-7.5 py-3 mt-[45px] mb-2.5 sticky top-20 justify-start">
           <button
             onClick={() => {
               if (filter === "past") setFilter("future");
             }}
-            className="filter-future-btn"
+            className={`filter-btn ${
+              filter === "future"
+                ? "filter-btn-active" // Active state class
+                : "filter-btn-inactive" // Inactive state class (optional, for hover etc.)
+            }`}
           >
             <span>{t("events.filterButton.future")}</span>
           </button>
@@ -79,7 +85,11 @@ function Events() {
             onClick={() => {
               if (filter === "future") setFilter("past");
             }}
-            className="filter-past-btn"
+            className={`filter-btn ${
+                filter === 'past'
+                  ? 'filter-btn-active' // Active state class
+                  : 'filter-btn-inactive' // Inactive state class (optional, for hover etc.)
+              }`}
           >
             <span>{t("events.filterButton.past")}</span>
           </button>
