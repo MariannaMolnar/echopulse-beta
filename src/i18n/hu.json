@@ -68,7 +68,9 @@
   "events": {
     "title": "Események",
     "subtitleNext": "Hamarosan",
-    "subtitleFuture": "Közelgő események",
-    "subtitlePast": "Korábbi események"
+    "filterButton": {
+      "future": "Közelgő események",
+      "past": "Korábbi események"
+    }
   }
 }

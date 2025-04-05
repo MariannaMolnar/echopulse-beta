@@ -68,7 +68,9 @@
   "events": {
     "title": "Events",
     "subtitleNext": "Up Next",
-    "subtitleFuture": "Future events",
-    "subtitlePast": "Past events"
+    "filterButton": {
+      "future": "Future events",
+      "past": "Past events"
+    }
   }
 }
