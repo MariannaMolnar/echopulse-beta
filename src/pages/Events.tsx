@@ -32,17 +32,22 @@ function splitEventsByDate(sortedEvents: Event[]) {
 
 function Events() {
   const { t } = useTranslation();
-  const [pastEvents, setpastEvents] = useState<Event[]>([]);
-  const [nextTwoEvents, setnextTwoEvents] = useState<Event[]>([]);
-  const [futureEvents, setfutureEvents] = useState<Event[]>([]);
+  const [pastEvents, setPastEvents] = useState<Event[]>([]);
+  const [nextTwoEvents, setNextTwoEvents] = useState<Event[]>([]);
+  const [futureEvents, setFutureEvents] = useState<Event[]>([]);
+  const [filter, setFilter] = useState<"future" | "past">("future");
 
   useEffect(() => {
     const { futureAsc, pastDesc } = splitEventsByDate(events);
     const restFutureEvents = futureAsc.slice(2);
-    setnextTwoEvents([futureAsc[0], futureAsc[1]]);
-    setfutureEvents(restFutureEvents);
-    setpastEvents(pastDesc);
+    setNextTwoEvents([futureAsc[0], futureAsc[1]]);
+    setFutureEvents(restFutureEvents);
+    setPastEvents(pastDesc);
   }, []);
+
+  /*useEffect(() => {
+    console.log("Filter updated:", filter);
+  }, [filter]);*/
 
   return (
     <div className="isolate w-full flex flex-col items-center px-6 py-24 sm:py-32 lg:px-8">
@@ -57,9 +62,29 @@ function Events() {
         {/* Up Next section */}
         <div>
           <h2>{t("events.subtitleNext")}</h2>
-          <div className="up-next-cards-container">{}</div>
+          <div className="up-next-cards-container"></div>
         </div>
+
         {/* Filters */}
+        <div className="filters">
+          <button
+            onClick={() => {
+              if (filter === "past") setFilter("future");
+            }}
+            className="filter-future-btn"
+          >
+            <span>{t("events.filterButton.future")}</span>
+          </button>
+          <button
+            onClick={() => {
+              if (filter === "future") setFilter("past");
+            }}
+            className="filter-past-btn"
+          >
+            <span>{t("events.filterButton.past")}</span>
+          </button>
+        </div>
+
         {/* Event cards */}
       </div>
     </div>
