@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AllArtists from "./pages/AllArtists";
+import Events from "./pages/Events";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/artists" element={<AllArtists />} />
+              <Route path="/events" element={<Events />} />
             </Route>
           </Routes>
         </BrowserRouter>
