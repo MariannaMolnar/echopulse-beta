@@ -117,9 +117,6 @@
 
   /* Style for the ACTIVE button */
   .filter-btn-active {
-    /* Example active state: blue background */
     @apply bg-gray-600 border-gray-600 text-white;
-    /* Optional: Different hover for active button if needed */
-    /* @apply hover:bg-blue-700 hover:border-blue-700; */
   }
 }
