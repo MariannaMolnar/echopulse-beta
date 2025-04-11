@@ -177,7 +177,7 @@ export const events: Event[] = [
         code: "US",
       },
     },
-    artists: [artists[14], artists[3]], // Neon Pulse (Synthwave DJ) & Bass Catalyst (DNB DJ)
+    artists: [artists[10], artists[3]], // Neon Pulse (Synthwave DJ) & Bass Catalyst (DNB DJ)
   },
   {
     id: "12",
@@ -190,7 +190,7 @@ export const events: Event[] = [
       city: { en: "Ibiza", hu: "Ibiza" },
       country: { name: { en: "Spain", hu: "Spanyolország" }, code: "ES" },
     },
-    artists: [artists[15]], // Sunset Frequencies (Deep House DJ)
+    artists: [artists[9]], // Sunset Frequencies (Deep House DJ)
   },
   {
     id: "13",
@@ -203,7 +203,7 @@ export const events: Event[] = [
       city: { en: "Dublin", hu: "Dublin" },
       country: { name: { en: "Ireland", hu: "Írország" }, code: "IE" },
     },
-    artists: [artists[16], artists[5]], // Emerald Spirits (Celtic Band) & Elara Winds (Flutist)
+    artists: [artists[12], artists[5]], // Emerald Spirits (Celtic Band) & Elara Winds (Flutist)
   },
   {
     id: "14",
@@ -219,7 +219,7 @@ export const events: Event[] = [
         code: "GB",
       },
     },
-    artists: [artists[3], artists[18]], // Bass Catalyst (DNB DJ) & Wobble King (Dubstep DJ)
+    artists: [artists[3], artists[6]], // Bass Catalyst (DNB DJ) & Wobble King (Dubstep DJ)
   },
   {
     id: "15",
@@ -235,7 +235,7 @@ export const events: Event[] = [
         code: "US",
       },
     },
-    artists: [artists[17]], // Six String Heroes (Rock Guitarists)
+    artists: [artists[7]], // Six String Heroes (Rock Guitarists)
   },
   {
     id: "16",
@@ -248,7 +248,7 @@ export const events: Event[] = [
       city: { en: "Bangkok", hu: "Bangkok" },
       country: { name: { en: "Thailand", hu: "Thaiföld" }, code: "TH" },
     },
-    artists: [artists[6], artists[19]], // Astral Traveler (Goa DJ) & Celestial Rave (Trance DJ)
+    artists: [artists[6], artists[8]], // Astral Traveler (Goa DJ) & Celestial Rave (Trance DJ)
   },
   {
     id: "17",
@@ -261,7 +261,7 @@ export const events: Event[] = [
       city: { en: "Vienna", hu: "Bécs" },
       country: { name: { en: "Austria", hu: "Ausztria" }, code: "AT" },
     },
-    artists: [artists[20]], // Digital Orchestra (Electronic Classical Fusion)
+    artists: [artists[2]], // Digital Orchestra (Electronic Classical Fusion)
   },
   {
     id: "18",
@@ -274,7 +274,7 @@ export const events: Event[] = [
       city: { en: "Tokyo", hu: "Tokió" },
       country: { name: { en: "Japan", hu: "Japán" }, code: "JP" },
     },
-    artists: [artists[21]], // Lo-Fi Cat (Lo-Fi Producer)
+    artists: [artists[1]], // Lo-Fi Cat (Lo-Fi Producer)
   },
   {
     id: "19",
@@ -290,7 +290,7 @@ export const events: Event[] = [
         code: "US",
       },
     },
-    artists: [artists[22]], // Velvet Harmony (Neo-Soul Band)
+    artists: [artists[4]], // Velvet Harmony (Neo-Soul Band)
   },
   {
     id: "20",
@@ -303,7 +303,7 @@ export const events: Event[] = [
       city: { en: "Rio de Janeiro", hu: "Rio de Janeiro" },
       country: { name: { en: "Brazil", hu: "Brazília" }, code: "BR" },
     },
-    artists: [artists[23], artists[10]], // Samba Fusion (Latin Band) & Afro Pulse (Afro DJ)
+    artists: [artists[3], artists[10]], // Samba Fusion (Latin Band) & Afro Pulse (Afro DJ)
   },
   {
     id: "21",
@@ -316,7 +316,7 @@ export const events: Event[] = [
       city: { en: "Berlin", hu: "Berlin" },
       country: { name: { en: "Germany", hu: "Németország" }, code: "DE" },
     },
-    artists: [artists[7], artists[15]], // TechPulse (Techno DJ) & Sunset Frequencies (Deep House DJ)
+    artists: [artists[7], artists[12]], // TechPulse (Techno DJ) & Sunset Frequencies (Deep House DJ)
   },
   {
     id: "22",
@@ -329,6 +329,6 @@ export const events: Event[] = [
       city: { en: "Oslo", hu: "Oslo" },
       country: { name: { en: "Norway", hu: "Norvégia" }, code: "NO" },
     },
-    artists: [artists[12], artists[16]], // Nordic Echo (Folk Band) & Emerald Spirits (Celtic Band)
+    artists: [artists[12], artists[9]], // Nordic Echo (Folk Band) & Emerald Spirits (Celtic Band)
   },
 ];
