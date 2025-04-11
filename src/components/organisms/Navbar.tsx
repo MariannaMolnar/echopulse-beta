@@ -4,7 +4,7 @@ import {
   XMarkIcon,
   GlobeAltIcon,
 } from "@heroicons/react/24/outline";
-import logoImg from "../assets/logo1.png";
+import logoImg from "../../assets/logo1.png";
 import Logo from "../atoms/Logo";
 import { useLanguage } from "../../context/LanguageContext";
 import LangDropdown from "../molecules/LangDropdown";
