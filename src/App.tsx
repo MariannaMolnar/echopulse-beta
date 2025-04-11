@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./components/Layout";
+import Layout from "./components/organisms/Layout";
 import Home from "./pages/Home";
 import { LanguageProvider } from "./context/LanguageContext";
 import { Suspense } from "react";

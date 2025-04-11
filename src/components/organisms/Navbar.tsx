@@ -5,11 +5,11 @@ import {
   GlobeAltIcon,
 } from "@heroicons/react/24/outline";
 import logoImg from "../assets/logo1.png";
-import Logo from "./Logo";
-import { useLanguage } from "../context/LanguageContext";
-import LangDropdown from "./LangDropdown";
+import Logo from "../atoms/Logo";
+import { useLanguage } from "../../context/LanguageContext";
+import LangDropdown from "../molecules/LangDropdown";
 import { useTranslation } from "react-i18next";
-import { SupportedLanguages } from "../i18n";
+import { SupportedLanguages } from "../../i18n";
 import { Link } from "react-router-dom";
 const LANGUAGES: { title: SupportedLanguages; countryCode: string }[] = [
   { title: "en", countryCode: "GB" },

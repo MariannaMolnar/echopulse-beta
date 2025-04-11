@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { events } from "../data/events";
 import { Event } from "../data/events";
 import { useEffect, useState } from "react";
-import NextEventCard from "../components/NextEventCard";
-import NextEventCardResp from "../components/NextEventCardResp";
+import NextEventCard from "../components/molecules/NextEventCard";
+import NextEventCardResp from "../components/molecules/NextEventCardResp";
 
 function sortEvents(events: Event[], sortType: "asc" | "desc") {
   if (sortType === "asc") {
