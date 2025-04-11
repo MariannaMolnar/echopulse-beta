@@ -19,7 +19,7 @@ function TicketsButton({ event, size = "md" }: Props) {
     <a
       href={event.ticketsLink}
       target="_blank"
-      className={`bg-blue-600 hover:bg-blue-700 text-white font-bold transition-colors ${buttonClasses[size]}`}
+      className={`bg-blue-600 hover:bg-blue-700 text-white font-bold tracking-wide transition-colors ${buttonClasses[size]}`}
     >
       {t("events.ticketsBtn")}
     </a>

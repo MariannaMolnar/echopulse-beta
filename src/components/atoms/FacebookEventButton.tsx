@@ -27,7 +27,7 @@ function FacebookEventButton({ event, size = "md" }: FbEventProps) {
       href={event.facebookEventLink}
       target="_blank"
       title="Facebook Event"
-      className={`inline-flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white transition-colors font-medium ${buttonClasses[size]}`}
+      className={`inline-flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white transition-colors font-medium tracking-wide ${buttonClasses[size]}`}
     >
       <FaFacebook className={`${fbIconClasses[size]}`} />
       <span>{t("events.facebookEvent")}</span>

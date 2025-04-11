@@ -11,7 +11,7 @@ function ArtistAvatarResponsive({ artist }: ArtistAvatarProps) {
   return (
     <Link to={linkTo} className="relative group inline-block align-top">
       <img
-        className={`relative inline-block rounded-full ring-2 ring-gray-700 align-middle h-10 w-10 md:h-14 md:w-14 lg:h-18 lg:w-18
+        className={`relative inline-block rounded-full ring-2 ring-gray-700 align-middle h-12 w-12 md:h-14 md:w-14 lg:h-18 lg:w-18
         transition-all duration-200 ease-in-out
         group-hover:scale-120 group-hover:z-10`}
         src={artist.image}
