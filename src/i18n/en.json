@@ -71,6 +71,9 @@
     "filterButton": {
       "future": "Future events",
       "past": "Past events"
-    }
+    },
+    "ticketsBtn": "Tickets",
+    "facebookEvent": "Event",
+    "months": ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
   }
 }

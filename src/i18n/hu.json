@@ -71,6 +71,9 @@
     "filterButton": {
       "future": "Közelgő események",
       "past": "Korábbi események"
-    }
+    },
+    "ticketsBtn": "Jegyek",
+    "facebookEvent": "Esemény",
+    "months": ["jan", "feb", "már", "ápr", "máj", "jún", "júl", "aug", "szep", "okt", "nov", "dec"]
   }
 }
