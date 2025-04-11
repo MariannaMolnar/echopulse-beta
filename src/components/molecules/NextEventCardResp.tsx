@@ -58,7 +58,7 @@ function NextEventCardResp({ event }: Props) {
               </div>
               <span className="inline min-w-0">
                 <span className="truncate">{eventCity}</span>
-                <span className="hidden md:inline">{`, ${eventCountry}`}</span>
+                <span className="hidden lg:inline">{`, ${eventCountry}`}</span>
               </span>
             </div>
           </div>
