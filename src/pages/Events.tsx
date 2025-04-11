@@ -3,6 +3,7 @@ import { events } from "../data/events";
 import { Event } from "../data/events";
 import { useEffect, useState } from "react";
 import NextEventCardResp from "../components/molecules/NextEventCardResp";
+import EventCard from "../components/molecules/EventCard";
 
 function sortEvents(events: Event[], sortType: "asc" | "desc") {
   if (sortType === "asc") {
@@ -102,6 +103,16 @@ function Events() {
         </div>
 
         {/* Event cards */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6 lg:gap-8">
+          {filter === "future" &&
+            futureEvents.map((event) => (
+              <EventCard key={event.id} event={event} />
+            ))}
+          {filter === "past" &&
+            pastEvents.map((event) => (
+              <EventCard key={event.id} event={event} />
+            ))}
+        </div>
       </div>
     </div>
   );
