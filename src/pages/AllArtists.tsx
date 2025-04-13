@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { artists } from "../data/artists";
-import ArtistCard from "../components/ArtistCard";
+import ArtistCard from "../components/molecules/ArtistCard";
 
 function AllArtists() {
   const { t } = useTranslation();

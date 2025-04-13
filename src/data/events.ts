@@ -240,7 +240,7 @@ export const events: Event[] = [
   {
     id: "16",
     name: "Trance Ascension",
-    date: new Date("2025-10-03T23:00:00Z"),
+    date: new Date("2024-10-03T23:00:00Z"),
     ticketsLink: "https://tickets.example.com/trance-ascension",
     facebookEventLink: "https://facebook.com/events/trance-ascension",
     image: eventImages[15],
@@ -253,7 +253,7 @@ export const events: Event[] = [
   {
     id: "17",
     name: "Electronic Symphony",
-    date: new Date("2025-11-18T19:30:00Z"),
+    date: new Date("2024-11-18T19:30:00Z"),
     ticketsLink: "https://tickets.example.com/electronic-symphony",
     facebookEventLink: "https://facebook.com/events/electronic-symphony",
     image: eventImages[16],
@@ -266,7 +266,7 @@ export const events: Event[] = [
   {
     id: "18",
     name: "Lo-Fi Winter Chill",
-    date: new Date("2025-12-15T18:00:00Z"),
+    date: new Date("2024-12-15T18:00:00Z"),
     ticketsLink: "https://tickets.example.com/lofi-winter-chill",
     facebookEventLink: "https://facebook.com/events/lofi-winter-chill",
     image: eventImages[17],
@@ -279,7 +279,7 @@ export const events: Event[] = [
   {
     id: "19",
     name: "Neo-Soul Serenade",
-    date: new Date("2026-01-08T20:00:00Z"),
+    date: new Date("2025-04-08T20:00:00Z"),
     ticketsLink: "https://tickets.example.com/neo-soul-serenade",
     facebookEventLink: "https://facebook.com/events/neo-soul-serenade",
     image: eventImages[18],
@@ -321,7 +321,7 @@ export const events: Event[] = [
   {
     id: "22",
     name: "Folk Harmony Night",
-    date: new Date("2025-06-10T19:30:00Z"),
+    date: new Date("2025-04-10T19:30:00Z"),
     ticketsLink: "https://tickets.example.com/folk-harmony-night",
     facebookEventLink: "https://facebook.com/events/folk-harmony-night",
     image: eventImages[21],
@@ -329,6 +329,6 @@ export const events: Event[] = [
       city: { en: "Oslo", hu: "Oslo" },
       country: { name: { en: "Norway", hu: "Norvégia" }, code: "NO" },
     },
-    artists: [artists[12], artists[9]], // Nordic Echo (Folk Band) & Emerald Spirits (Celtic Band)
+    artists: [artists[7], artists[12], artists[9], artists[10], artists[5], artists[3]], // Nordic Echo (Folk Band) & Emerald Spirits (Celtic Band)
   },
 ];

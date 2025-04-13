@@ -1,5 +1,5 @@
 import { JSX, ReactNode } from "react";
-import { SupportedLanguages } from "../i18n";
+import { SupportedLanguages } from "../../i18n";
 import ReactCountryFlag from "react-country-flag";
 
 interface ItemType {
