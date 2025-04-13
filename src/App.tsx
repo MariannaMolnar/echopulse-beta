@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AllArtists from "./pages/AllArtists";
 import Events from "./pages/Events";
+import ArtistRoutes from "./pages/ArtistRoutes";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/artists" element={<AllArtists />} />
+              <Route path="/artists/*" element={<ArtistRoutes />}/>
               <Route path="/events" element={<Events />} />
             </Route>
           </Routes>
