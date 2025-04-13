@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useLanguage } from "../../context/LanguageContext";
+//import { useLanguage } from "../../context/LanguageContext";
 import { Event } from "../../data/events";
 import DateBlockResponsive from "../atoms/DateBlockResponsive";
 import FacebookEventButtonResponsive from "../atoms/FacebookEventButtonResponsive";
@@ -14,14 +14,14 @@ type Props = {
 };
 
 function EventCard_v2({ event, isFuture }: Props) {
-  const { language } = useLanguage();
+  //const { language } = useLanguage();
   const { t } = useTranslation();
-  const eventCity =
+  /*const eventCity =
     event.address.city[language as keyof typeof event.address.city];
   const eventCountry =
     event.address.country.name[
       language as keyof typeof event.address.country.name
-    ];
+    ];*/
   const monthsArray = t("events.months", { returnObjects: true }) as string[];
   const monthIndex = event.date.getMonth();
   const monthName = monthsArray[monthIndex];
