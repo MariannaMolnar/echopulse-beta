@@ -1,17 +1,25 @@
 import { Link } from "react-router-dom";
 import { Artist } from "../../data/artists";
 
+type Size = "small" | "midi"
+
 type ArtistAvatarProps = {
   artist: Artist;
+  startSize?: Size;
 };
 
-function ArtistAvatarResponsive({ artist }: ArtistAvatarProps) {
+function ArtistAvatarResponsive({ artist, startSize = "midi" }: ArtistAvatarProps) {
   const linkTo = `/artists/${artist.name}`;
+
+  const resonsiveImageClasses: Record<Size, string> = {
+    small: "ring-1 h-10 w-10 md:h-12 md:w-12 lg:ring-2 lg:h-14 lg:w-14 2xl:h-16 2xl:w-16",
+    midi: "ring-2 h-12 w-12 md:h-14 md:w-14 lg:h-18 lg:w-18"
+  };
 
   return (
     <Link to={linkTo} className="relative group inline-block align-top">
       <img
-        className={`relative inline-block rounded-full ring-2 ring-gray-700 align-middle h-12 w-12 md:h-14 md:w-14 lg:h-18 lg:w-18
+        className={`relative inline-block rounded-full ring-gray-700 align-middle ${resonsiveImageClasses[startSize]}
         transition-all duration-200 ease-in-out
         group-hover:scale-120 group-hover:z-10`}
         src={artist.image}
