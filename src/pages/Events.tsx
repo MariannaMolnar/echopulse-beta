@@ -4,6 +4,7 @@ import { Event } from "../data/events";
 import { useEffect, useState } from "react";
 import NextEventCardResp from "../components/molecules/NextEventCardResp";
 import EventCard from "../components/molecules/EventCard";
+import EventCard_v2 from "../components/molecules/EventCard_v2";
 
 function sortEvents(events: Event[], sortType: "asc" | "desc") {
   if (sortType === "asc") {
@@ -12,14 +13,18 @@ function sortEvents(events: Event[], sortType: "asc" | "desc") {
   return [...events].sort((a, b) => b.date.getTime() - a.date.getTime());
 }
 
-function splitEventsByDate(sortedEvents: Event[]) {
+function isFutureDate(eventDate: Date): boolean {
   const currentDate = new Date();
+  return eventDate >= currentDate;
+}
 
+function splitEventsByDate(sortedEvents: Event[]) {
   const future: Event[] = [];
   const past: Event[] = [];
 
   sortedEvents.forEach((event) => {
-    if (event.date >= currentDate) {
+    const isFuture = isFutureDate(event.date);
+    if (isFuture) {
       future.push(event);
     } else {
       past.push(event);
@@ -103,14 +108,14 @@ function Events() {
         </div>
 
         {/* Event cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-2 md:gap-6 lg:gap-8">
           {filter === "future" &&
             futureEvents.map((event) => (
-              <EventCard key={event.id} event={event} />
+              <EventCard key={event.id} event={event} isFuture={isFutureDate(event.date)}/>
             ))}
           {filter === "past" &&
             pastEvents.map((event) => (
-              <EventCard key={event.id} event={event} />
+              <EventCard_v2 key={event.id} event={event} isFuture={isFutureDate(event.date)}/>
             ))}
         </div>
       </div>
