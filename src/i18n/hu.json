@@ -75,5 +75,14 @@
     "ticketsBtn": "Jegyek",
     "facebookEvent": "Esemény",
     "months": ["jan", "feb", "már", "ápr", "máj", "jún", "júl", "aug", "szep", "okt", "nov", "dec"]
+  },
+  "artistDetails": {
+    "months": ["jan", "feb", "már", "ápr", "máj", "jún", "júl", "aug", "szep", "okt", "nov", "dec"],
+    "sectionTitles": {
+      "about": "Rólam",
+      "socials": "Fedezd fel",
+      "nextEvents": "Közelgő események",
+      "mediaplayer": "Zenék"
+    }
   }
 }

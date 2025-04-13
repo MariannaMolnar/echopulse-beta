@@ -75,5 +75,14 @@
     "ticketsBtn": "Tickets",
     "facebookEvent": "Event",
     "months": ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+  },
+  "artistDetails": {
+    "months": ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"],
+    "sectionTitles": {
+      "about": "About Me",
+      "socials": "Check Out",
+      "nextEvents": "Next Events",
+      "mediaplayer": "Media"
+    }
   }
 }
