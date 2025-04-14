@@ -21,7 +21,7 @@ function ArtistDetailsPage() {
           {/* Header section */}
           <ProfileHeader artist={artist} />
           {/* Details section */}
-          <div className="grid grid-cols-[75%_25%] gap-4 md:gap-6 xl:gap-8">
+          <div className="grid grid-cols-[75%_25%] gap-4 md:gap-5 xl:gap-6 pr-4 md:pr-6">
             {/* Left column - About section */}
             <ArtistAbout artist={artist} />
             {/* Right column section */}
