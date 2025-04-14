@@ -1,18 +1,20 @@
-import artistImg1 from "../images/artists/01_artist-alter.jpg"
-import artistImg2 from "../images/artists/02_artist-dj-5.jpg"
-import artistImg3 from "../images/artists/03_artist-dj-trio.jpg"
-import artistImg4 from "../images/artists/04_artist-dnb.jpg"
-import artistImg5 from "../images/artists/05_artist-duo.jpg"
-import artistImg6 from "../images/artists/06_artist-etno.jpg"
-import artistImg7 from "../images/artists/07_artist-goa-dj.jpg"
-import artistImg8 from "../images/artists/08_artist-hangdrum.jpg"
-import artistImg9 from "../images/artists/09_artist-medicin-band.jpg"
-import artistImg10 from "../images/artists/10_artist-raggee.jpg"
-import artistImg11 from "../images/artists/11_artist-portrait.jpg"
-import artistImg12 from "../images/artists/12_artist-psy-trance-dj.jpg"
-import artistImg13 from "../images/artists/13_artist-psy-rock.jpg"
-import artistImg14 from "../images/artists/14_artist-techno-dj.jpg"
+import artistImg1 from "../images/artists/01_artist-alter.jpg";
+import artistImg2 from "../images/artists/02_artist-dj-5.jpg";
+import artistImg3 from "../images/artists/03_artist-dj-trio.jpg";
+import artistImg4 from "../images/artists/04_artist-dnb.jpg";
+import artistImg5 from "../images/artists/05_artist-duo.jpg";
+import artistImg6 from "../images/artists/06_artist-etno.jpg";
+import artistImg7 from "../images/artists/07_artist-goa-dj.jpg";
+import artistImg8 from "../images/artists/08_artist-hangdrum.jpg";
+import artistImg9 from "../images/artists/09_artist-medicin-band.jpg";
+import artistImg10 from "../images/artists/10_artist-raggee.jpg";
+import artistImg11 from "../images/artists/11_artist-portrait.jpg";
+import artistImg12 from "../images/artists/12_artist-psy-trance-dj.jpg";
+import artistImg13 from "../images/artists/13_artist-psy-rock.jpg";
+import artistImg14 from "../images/artists/14_artist-techno-dj.jpg";
 
+const fillingText =
+  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi asperiores tenetur quae maiores voluptate doloribus, veritatis impedit, aliquam repudiandae natus iure at reiciendis labore animi laborum ad, explicabo ut beatae.";
 
 export type LanguageSpecificString = {
   en: string;
@@ -49,8 +51,14 @@ export const artists: Artist[] = [
       code: "GB",
     },
     description: {
-      en: "Shadow Echo is an alternative musician blending deep lyrical storytelling with ambient rock textures. His music takes inspiration from the echoes of personal experiences and the raw energy of post-rock.",
-      hu: "Shadow Echo egy alternatív zenész, aki mély lírai történetmesélést ötvöz ambient rock hangzásokkal. Zenéje személyes tapasztalatok visszhangjából és a poszt-rock nyers energiájából merít inspirációt.",
+      en: `Shadow Echo is an alternative musician blending deep lyrical storytelling with ambient rock textures. His music takes inspiration from the echoes of personal experiences and the raw energy of post-rock.\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
+      hu: `Shadow Echo egy alternatív zenész, aki mély lírai történetmesélést ötvöz ambient rock hangzásokkal. Zenéje személyes tapasztalatok visszhangjából és a poszt-rock nyers energiájából merít inspirációt.\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/shadowecho",
@@ -71,8 +79,12 @@ export const artists: Artist[] = [
       code: "DE",
     },
     description: {
-      en: "Pulse Trio is a dynamic DJ collective known for their high-energy electronic sets that blend house, techno, and progressive elements into an unforgettable experience.",
-      hu: "A Pulse Trio egy dinamikus DJ kollektíva, amely nagy energiájú elektronikus szettjeiről ismert, ötvözve a house, techno és progresszív elemeket egy felejthetetlen élménybe.",
+      en: `Pulse Trio is a dynamic DJ collective known for their high-energy electronic sets that blend house, techno, and progressive elements into an unforgettable experience.\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
+      hu: `A Pulse Trio egy dinamikus DJ kollektíva, amely nagy energiájú elektronikus szettjeiről ismert, ötvözve a house, techno és progresszív elemeket egy felejthetetlen élménybe.\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/pulsetrio",
@@ -92,8 +104,12 @@ export const artists: Artist[] = [
       code: "NL",
     },
     description: {
-      en: "Aurora Beats is an electrifying DJ trio that merges ethereal vocals with deep, pulsating basslines, creating an immersive dancefloor journey.",
-      hu: "Az Aurora Beats egy lenyűgöző DJ trió, amely éteri vokálokat ötvöz mély, pulzáló basszusokkal, magával ragadó tánctéri utazást teremtve.",
+      en: `Aurora Beats is an electrifying DJ trio that merges ethereal vocals with deep, pulsating basslines, creating an immersive dancefloor journey.\n
+        ${fillingText}\n
+        ${fillingText}`,
+      hu: `Az Aurora Beats egy lenyűgöző DJ trió, amely éteri vokálokat ötvöz mély, pulzáló basszusokkal, magával ragadó tánctéri utazást teremtve.\n
+        ${fillingText}\n
+        ${fillingText}`,
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/aurorabeats",
@@ -114,8 +130,14 @@ export const artists: Artist[] = [
       code: "CA",
     },
     description: {
-      en: "Bass Siren is a drum and bass DJ whose hypnotic beats and fierce energy have captivated audiences worldwide, bringing underground rhythms to the forefront.",
-      hu: "A Bass Siren egy drum and bass DJ, akinek hipnotikus ütemei és energikus előadásai világszerte magukkal ragadják a közönséget, az underground ritmusokat előtérbe helyezve.",
+      en: `Bass Siren is a drum and bass DJ whose hypnotic beats and fierce energy have captivated audiences worldwide, bringing underground rhythms to the forefront.\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}`,
+      hu: `A Bass Siren egy drum and bass DJ, akinek hipnotikus ütemei és energikus előadásai világszerte magukkal ragadják a közönséget, az underground ritmusokat előtérbe helyezve.\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}`,
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/basssiren",
@@ -135,8 +157,12 @@ export const artists: Artist[] = [
       code: "FR",
     },
     description: {
-      en: "Echo & String is an acoustic duo known for their soul-stirring performances, blending heartfelt vocals with intricate guitar melodies.",
-      hu: "Az Echo & String egy akusztikus duó, amely lélekmelengető előadásaival és bonyolult gitárdallamaival varázsolja el a közönséget.",
+      en: `Echo & String is an acoustic duo known for their soul-stirring performances, blending heartfelt vocals with intricate guitar melodies.\n
+        ${fillingText}${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}`,
+      hu: `Az Echo & String egy akusztikus duó, amely lélekmelengető előadásaival és bonyolult gitárdallamaival varázsolja el a közönséget.\n
+        ${fillingText}${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}`,
     },
     socialLinks: {
       youtube: "https://youtube.com/echostring",
@@ -155,8 +181,14 @@ export const artists: Artist[] = [
       code: "HU",
     },
     description: {
-      en: "Wind Whisper is a solo ethno musician whose flute compositions evoke the spirit of ancient traditions and nature’s harmony.",
-      hu: "A Wind Whisper egy szóló etno zenész, akinek fuvolakompozíciói az ősi hagyományok és a természet harmóniáját idézik meg.",
+      en: `Wind Whisper is a solo ethno musician whose flute compositions evoke the spirit of ancient traditions and nature’s harmony.\n
+        ${fillingText}\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}`,
+      hu: `"A Wind Whisper egy szóló etno zenész, akinek fuvolakompozíciói az ősi hagyományok és a természet harmóniáját idézik meg.\n
+        ${fillingText}\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}`,
     },
     socialLinks: {
       spotify: "https://spotify.com/windwhisper",
@@ -175,8 +207,14 @@ export const artists: Artist[] = [
       code: "IL",
     },
     description: {
-      en: "Psyflow is a Goa DJ known for his hypnotic beats and euphoric soundscapes that transport listeners to another dimension.",
-      hu: "A Psyflow egy Goa DJ, aki hipnotikus ütemeivel és eufórikus hangképeivel egy másik dimenzióba repíti hallgatóit.",
+      en: `Psyflow is a Goa DJ known for his hypnotic beats and euphoric soundscapes that transport listeners to another dimension.\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}`,
+      hu: `A Psyflow egy Goa DJ, aki hipnotikus ütemeivel és eufórikus hangképeivel egy másik dimenzióba repíti hallgatóit.\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}`,
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/psyflow",
@@ -196,8 +234,14 @@ export const artists: Artist[] = [
       code: "AU",
     },
     description: {
-      en: "Steel Resonance is a hang drum musician who crafts mesmerizing rhythms that soothe the soul and awaken the senses.",
-      hu: "A Steel Resonance egy hangdrum zenész, aki lenyűgöző ritmusokat alkot, amelyek megnyugtatják a lelket és felébresztik az érzékeket.",
+      en: `Steel Resonance is a hang drum musician who crafts mesmerizing rhythms that soothe the soul and awaken the senses.\n
+        ${fillingText}\n
+        ${fillingText}\n
+        ${fillingText}`,
+      hu: `A Steel Resonance egy hangdrum zenész, aki lenyűgöző ritmusokat alkot, amelyek megnyugtatják a lelket és felébresztik az érzékeket.\n
+        ${fillingText}\n
+        ${fillingText}\n
+        ${fillingText}`,
     },
     socialLinks: {
       youtube: "https://youtube.com/steelresonance",
@@ -217,8 +261,12 @@ export const artists: Artist[] = [
       code: "BR",
     },
     description: {
-      en: "Healing Rhythms is a medicine band that fuses traditional indigenous sounds with modern spiritual music to create deeply transformative experiences.",
-      hu: "A Healing Rhythms egy medicin banda, amely az ősi indián hangzásokat ötvözi a modern spirituális zenével, mélyen átalakító élményeket teremtve.",
+      en: `Healing Rhythms is a medicine band that fuses traditional indigenous sounds with modern spiritual music to create deeply transformative experiences.\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
+      hu: `A Healing Rhythms egy medicin banda, amely az ősi indián hangzásokat ötvözi a modern spirituális zenével, mélyen átalakító élményeket teremtve.\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
     },
     socialLinks: {
       facebook: "https://facebook.com/healingrhythms",
@@ -237,8 +285,14 @@ export const artists: Artist[] = [
       code: "JM",
     },
     description: {
-      en: "Roots Movement is a reggae band bringing conscious lyrics and groovy rhythms to uplift the spirit and unite people.",
-      hu: "A Roots Movement egy reggae zenekar, amely tudatos dalszövegekkel és groovy ritmusokkal emeli fel a lelket és egyesíti az embereket.",
+      en: `Roots Movement is a reggae band bringing conscious lyrics and groovy rhythms to uplift the spirit and unite people.\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
+      hu: `A Roots Movement egy reggae zenekar, amely tudatos dalszövegekkel és groovy ritmusokkal emeli fel a lelket és egyesíti az embereket.\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
     },
     socialLinks: {
       spotify: "https://spotify.com/rootsmovement",
@@ -257,8 +311,14 @@ export const artists: Artist[] = [
       code: "ZA",
     },
     description: {
-      en: "An Afro house DJ blending deep tribal beats with uplifting percussions.",
-      hu: "Egy Afro house DJ, aki mély törzsi ütemeket és felemelő ütőhangszereket ötvöz.",
+      en: `An Afro house DJ blending deep tribal beats with uplifting percussions.\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}`,
+      hu: `Egy Afro house DJ, aki mély törzsi ütemeket és felemelő ütőhangszereket ötvöz.\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}`,
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/afropulse",
@@ -277,8 +337,14 @@ export const artists: Artist[] = [
       code: "PT",
     },
     description: {
-      en: "A psy-trance DJ with an atmospheric and energetic sound, taking audiences on a deep cosmic journey.",
-      hu: "Egy psy-trance DJ atmoszférikus és energikus hangzással, amely mély kozmikus utazásra viszi a közönséget.",
+      en: `A psy-trance DJ with an atmospheric and energetic sound, taking audiences on a deep cosmic journey.\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
+      hu: `Egy psy-trance DJ atmoszférikus és energikus hangzással, amely mély kozmikus utazásra viszi a közönséget.\n
+        ${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
     },
     socialLinks: {
       youtube: "https://youtube.com/lunarvibes",
@@ -298,8 +364,14 @@ export const artists: Artist[] = [
       code: "AU",
     },
     description: {
-      en: "PsyMirage is a psychedelic rock band known for their surreal soundscapes, intricate guitar riffs, and hypnotic rhythms. The four-member group blends vintage 70s influences with modern experimental rock, creating an immersive sonic experience.",
-      hu: "A PsyMirage egy pszichedelikus rockzenekar, amely szürreális hangzásvilágáról, összetett gitárriffjeiről és hipnotikus ritmusairól ismert. A négytagú együttes a 70-es évek vintage hatásait ötvözi a modern kísérleti rockkal, így teremtve magával ragadó zenei élményt.",
+      en: `PsyMirage is a psychedelic rock band known for their surreal soundscapes, intricate guitar riffs, and hypnotic rhythms. The four-member group blends vintage 70s influences with modern experimental rock, creating an immersive sonic experience.\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
+      hu: `A PsyMirage egy pszichedelikus rockzenekar, amely szürreális hangzásvilágáról, összetett gitárriffjeiről és hipnotikus ritmusairól ismert. A négytagú együttes a 70-es évek vintage hatásait ötvözi a modern kísérleti rockkal, így teremtve magával ragadó zenei élményt.\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}${fillingText}\n
+        ${fillingText}`,
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/psymirage",
@@ -321,8 +393,12 @@ export const artists: Artist[] = [
       code: "BE",
     },
     description: {
-      en: "CyberPulse is a techno DJ and producer crafting futuristic, high-energy beats infused with deep basslines and hypnotic synths. His sets are a fusion of underground warehouse vibes and cutting-edge electronic innovation.",
-      hu: "CyberPulse egy techno DJ és producer, aki futurisztikus, pörgős ütemeket alkot mély basszusokkal és hipnotikus szintetizátorhangokkal. Szettjei az underground raktárpartik hangulatát ötvözik a legmodernebb elektronikus újításokkal.",
+      en: `CyberPulse is a techno DJ and producer crafting futuristic, high-energy beats infused with deep basslines and hypnotic synths. His sets are a fusion of underground warehouse vibes and cutting-edge electronic innovation.\n
+        ${fillingText}\n
+        ${fillingText}`,
+      hu: `CyberPulse egy techno DJ és producer, aki futurisztikus, pörgős ütemeket alkot mély basszusokkal és hipnotikus szintetizátorhangokkal. Szettjei az underground raktárpartik hangulatát ötvözik a legmodernebb elektronikus újításokkal.\n
+        ${fillingText}\n
+        ${fillingText}`,
     },
     socialLinks: {
       soundCloud: "https://soundcloud.com/cyberpulse",
