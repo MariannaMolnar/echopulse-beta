@@ -32,8 +32,8 @@ function ArtistNextEventCard({ artistEvent }: NextEventProps) {
       className="relative flex items-center gap-4 bg-gray-800 rounded-lg shadow-lg overflow-hidden p-2 md:p-3 text-gray-200"
       style={cardStyle}
     >
-        {/* --- Dark Overlay for Text Readability --- */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-0 pointer-events-none"></div>
+      {/* --- Dark Overlay for Text Readability --- */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-0 pointer-events-none"></div>
       {/* --- Left Section: Date Block --- */}
       <div className="flex-shrink-0 z-20">
         <DateBlockResponsive
@@ -70,8 +70,8 @@ function ArtistNextEventCard({ artistEvent }: NextEventProps) {
 
       {/* --- Right Section: Action buttons --- */}
       <div className="relative z-20 grid grid-cols-1 gap-3 items-center">
-        <FacebookEventButtonResponsive event={artistEvent}/>
-        <TicketsButtonResponsive event={artistEvent}/>
+        <FacebookEventButtonResponsive event={artistEvent} />
+        <TicketsButtonResponsive event={artistEvent} />
       </div>
     </div>
   );
