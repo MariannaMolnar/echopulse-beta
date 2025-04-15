@@ -83,6 +83,15 @@
       "socials": "Check Out",
       "nextEvents": "Next Events",
       "mediaplayer": "Media"
+    },
+    "socials": {
+      "soundCloud": "Soundcloud",
+      "spotify": "Spotify",
+      "youtube": "Youtube",
+      "facebook": "Facebook",
+      "website": "Website",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
     }
   }
 }
