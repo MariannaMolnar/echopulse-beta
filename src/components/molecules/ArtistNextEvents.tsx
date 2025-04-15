@@ -10,7 +10,7 @@ function ArtistNextEvents({ artistNextEvents }: NextEventsProps) {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col w-full gap-3 px-6 2xl:px-8 py-6 bg-black/50 text-white rounded-xl flex-shrink-0">
+    <div className="flex flex-col w-full gap-4 px-6 2xl:px-8 py-6 bg-black/50 text-white rounded-xl flex-shrink-0">
       <h2 className="text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold text-white pb-6">
         {t("artistDetails.sectionTitles.nextEvents")}
       </h2>
