@@ -18,14 +18,14 @@ function ProfileHeader({ artist }: HeaderProps) {
       <ArtistProfileAvatar artist={artist} />
 
       {/* Info Block: Stacks Name and Country vertically */}
-      <div className="flex flex-col">
+      <div className="flex flex-col md:gap-1">
         {/* Artist Name */}
         <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white mb-1">
           {artist.name}
         </h2>
 
         {/* Country Info: Uses flex row internally */}
-        <div className="flex items-baseline gap-2  text-gray-400">
+        <div className="flex items-center gap-2 text-gray-400">
           {/* Flag Container */}
           <div className="inline-flex items-center justify-center w-5 h-4 shrink-0">
             <ReactCountryFlag
