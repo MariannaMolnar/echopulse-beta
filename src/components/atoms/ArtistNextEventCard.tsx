@@ -62,8 +62,8 @@ function ArtistNextEventCard({ artistEvent }: NextEventProps) {
           </div>
           {/* Location Text */}
           <span className="inline min-w-0">
-            <span className="">{eventCity}</span>
-            <span className="">{`, ${eventCountry}`}</span>
+            <span>{eventCity}</span>
+            <span>{`, ${eventCountry}`}</span>
           </span>
         </div>
       </div>
