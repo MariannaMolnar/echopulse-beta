@@ -43,7 +43,7 @@ function ArtistDetailsPage() {
           {/* Header section */}
           <ProfileHeader artist={artist} />
           {/* Details section */}
-          <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[60%_40%] xl:grid-cols-[75%_25%] lg:gap-4 xl:gap-5 lg:pr-6 mt-6 md:mt-8">
+          <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[60%_40%] 2xl:grid-cols-[70%_30%] lg:gap-4 xl:gap-5 lg:pr-6 mt-6 md:mt-8">
             {/* Left column - About section */}
             <div className="order-2 lg:order-none">
               <ArtistAbout artist={artist} />
