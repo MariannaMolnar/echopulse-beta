@@ -3,6 +3,8 @@ import { useLanguage } from "../../context/LanguageContext";
 import { Event } from "../../data/events";
 import DateBlockResponsive from "./DateBlockResponsive";
 import ReactCountryFlag from "react-country-flag";
+import FacebookEventButtonResponsive from "./FacebookEventButtonResponsive";
+import TicketsButtonResponsive from "./TicketsButtonResponsive";
 
 type NextEventProps = {
   artistEvent: Event;
@@ -21,10 +23,19 @@ function ArtistNextEventCard({ artistEvent }: NextEventProps) {
   const monthIndex = artistEvent.date.getMonth();
   const monthName = monthsArray[monthIndex];
 
+  const cardStyle = {
+    backgroundImage: `url(${artistEvent.image})`,
+  };
+
   return (
-    <div className="flex items-center gap-4 bg-gray-800 rounded-lg shadow-lg overflow-hidden p-3 md:p-4 text-gray-200">
+    <div
+      className="relative flex items-center gap-4 bg-gray-800 rounded-lg shadow-lg overflow-hidden p-2 md:p-3 text-gray-200"
+      style={cardStyle}
+    >
+        {/* --- Dark Overlay for Text Readability --- */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-0 pointer-events-none"></div>
       {/* --- Left Section: Date Block --- */}
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 z-20">
         <DateBlockResponsive
           date={artistEvent.date.getDate()}
           monthName={monthName}
@@ -34,8 +45,8 @@ function ArtistNextEventCard({ artistEvent }: NextEventProps) {
       </div>
 
       {/* --- Middle Section: Info --- */}
-      <div className="flex-1 flex flex-col min-w-0">
-        <p className="font-bold text-base md:text-lg text-white truncate mb-1">
+      <div className="flex-1 flex flex-col min-w-0 z-10">
+        <p className="font-bold text-base md:text-lg text-white mb-1">
           {artistEvent.name}
         </p>
         {/* Location Info */}
@@ -51,10 +62,16 @@ function ArtistNextEventCard({ artistEvent }: NextEventProps) {
           </div>
           {/* Location Text */}
           <span className="inline min-w-0">
-            <span className="truncate">{eventCity}</span>
-            <span className="inline">{`, ${eventCountry}`}</span>
+            <span className="">{eventCity}</span>
+            <span className="">{`, ${eventCountry}`}</span>
           </span>
         </div>
+      </div>
+
+      {/* --- Right Section: Action buttons --- */}
+      <div className="relative z-20 grid grid-cols-1 gap-3 items-center">
+        <FacebookEventButtonResponsive event={artistEvent}/>
+        <TicketsButtonResponsive event={artistEvent}/>
       </div>
     </div>
   );
