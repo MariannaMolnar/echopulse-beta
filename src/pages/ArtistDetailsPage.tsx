@@ -4,6 +4,7 @@ import ProfileHeader from "../components/molecules/ProfileHeader";
 import ArtistAbout from "../components/molecules/ArtistAbout";
 import SocialsCard from "../components/molecules/SocialsCard";
 import { Event, events } from "../data/events";
+import ArtistNextEvents from "../components/molecules/ArtistNextEvents";
 
 type ArtistName = string | undefined;
 
@@ -46,10 +47,11 @@ function ArtistDetailsPage() {
               <ArtistAbout artist={artist} />
             </div>
             {/* Right column section */}
-            <div className="order-1 lg:order-none w-full text-gray-300 rounded-xl shadow-lg pb-4 mt-4 md:pb-6">
+            <div className="order-1 lg:order-none flex flex-col gap-6 w-full text-gray-300 rounded-xl shadow-lg pb-4 mt-4 md:pb-6">
               {/* Socials section */}
               <SocialsCard artist={artist} />
               {/* Next Events section */}
+              <ArtistNextEvents artistNextEvents={artistNextThreeEvents}/>
             </div>
           </div>
         </div>
