@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { Artist } from "../data/artists";
 import ProfileHeader from "../components/molecules/ProfileHeader";
 import ArtistAbout from "../components/molecules/ArtistAbout";
+import SocialsCard from "../components/molecules/SocialsCard";
 
 function getArtist(artistName: string | undefined): Artist | null {
   if (!artistName) return null;
@@ -27,9 +28,9 @@ function ArtistDetailsPage() {
               <ArtistAbout artist={artist} />
             </div>
             {/* Right column section */}
-            <div className="order-1 lg:order-none w-full bg-black/60 text-gray-300 rounded-xl shadow-lg py-4 mt-4 md:py-6">
-              Item 2 (25%)
+            <div className="order-1 lg:order-none w-full text-gray-300 rounded-xl shadow-lg pb-4 mt-4 md:pb-6">
               {/* Socials section */}
+              <SocialsCard artist={artist}/>
               {/* Next Events section */}
             </div>
           </div>
