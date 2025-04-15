@@ -83,6 +83,15 @@
       "socials": "Fedezd fel",
       "nextEvents": "Közelgő események",
       "mediaplayer": "Zenék"
+    },
+    "socials": {
+      "soundCloud": "Soundcloud",
+      "spotify": "Spotify",
+      "youtube": "Youtube",
+      "facebook": "Facebook",
+      "website": "Weboldal",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
     }
   }
 }

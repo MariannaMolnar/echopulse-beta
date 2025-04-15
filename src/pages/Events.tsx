@@ -80,7 +80,7 @@ function Events() {
         </div>
 
         {/* Filters */}
-        <div className="flex items-center gap-4 px-7.5 py-3 mt-[45px] mb-2.5 sticky top-20 justify-start">
+        <div className="flex flex-col gap-2 px-7.5 py-3 mt-[45px] mb-2.5 sticky top-20 justify-start sm:flex-row sm:items-center sm:gap-4">
           <button
             onClick={() => {
               if (filter === "past") setFilter("future");

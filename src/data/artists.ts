@@ -35,6 +35,8 @@ export interface Artist {
     youtube?: string;
     facebook?: string;
     website?: string;
+    instagram?:string;
+    tiktok?: string;
   };
   image: string;
 }
@@ -379,6 +381,8 @@ export const artists: Artist[] = [
       website: "https://psynmirageband.com",
       youtube: "https://youtube.com/psymirage",
       facebook: "https://facebook.com/psymirage",
+      instagram: "https://instagram.com/psymirage",
+      tiktok: "https://tiktok.com/@psymirage.official",
     },
     image: artistImg13,
   },

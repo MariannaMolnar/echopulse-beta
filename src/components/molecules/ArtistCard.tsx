@@ -4,6 +4,7 @@ import { BsGlobe2 } from "react-icons/bs";
 import { PiSoundcloudLogoFill } from "react-icons/pi";
 import { useLanguage } from "../../context/LanguageContext";
 import ReactCountryFlag from "react-country-flag";
+import { Link } from "react-router-dom";
 
 type Props = {
   artist: Artist;
@@ -11,13 +12,16 @@ type Props = {
 
 function ArtistCard({ artist }: Props) {
   const { language } = useLanguage();
+  const linkTo = `/artists/${artist.name}`;
 
   return (
     <div className="artist-card group">
       {/* Artist image */}
       <div className="artist-image-container">
-        <img src={artist.image} className="artist-image" />
-        <p className="artist-name-overlay">{artist.name.toUpperCase()}</p>
+        <Link to={linkTo}>
+          <img src={artist.image} className="artist-image" />
+          <p className="artist-name-overlay">{artist.name.toUpperCase()}</p>
+        </Link>
       </div>
       {/* Artist info */}
       <div className="artist-info-container">
