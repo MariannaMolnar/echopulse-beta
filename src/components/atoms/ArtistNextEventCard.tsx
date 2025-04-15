@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../../context/LanguageContext";
 import { Event } from "../../data/events";
-import DateBlockResponsive from "./DateBlockResponsive";
+import DateBlock from "./DateBlock";
 import ReactCountryFlag from "react-country-flag";
-import FacebookEventButtonResponsive from "./FacebookEventButtonResponsive";
-import TicketsButtonResponsive from "./TicketsButtonResponsive";
+import FacebookEventButton from "./FacebookEventButton";
+import TicketsButton from "./TicketsButton";
 
 type NextEventProps = {
   artistEvent: Event;
@@ -36,7 +36,7 @@ function ArtistNextEventCard({ artistEvent }: NextEventProps) {
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-0 pointer-events-none"></div>
       {/* --- Left Section: Date Block --- */}
       <div className="flex-shrink-0 z-20">
-        <DateBlockResponsive
+        <DateBlock
           date={artistEvent.date.getDate()}
           monthName={monthName}
           year={artistEvent.date.getFullYear()}
@@ -70,8 +70,8 @@ function ArtistNextEventCard({ artistEvent }: NextEventProps) {
 
       {/* --- Right Section: Action buttons --- */}
       <div className="relative z-20 grid grid-cols-1 gap-3 items-center">
-        <FacebookEventButtonResponsive event={artistEvent} />
-        <TicketsButtonResponsive event={artistEvent} />
+        <FacebookEventButton event={artistEvent} />
+        <TicketsButton event={artistEvent} />
       </div>
     </div>
   );

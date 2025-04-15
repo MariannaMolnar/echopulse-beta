@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 //import { useLanguage } from "../../context/LanguageContext";
 import { Event } from "../../data/events";
-import DateBlockResponsive from "../atoms/DateBlockResponsive";
-import FacebookEventButtonResponsive from "../atoms/FacebookEventButtonResponsive";
-import TicketsButtonResponsive from "../atoms/TicketsButtonResponsive";
-import ArtistAvatarResponsive from "../atoms/ArtistAvatarResponsive";
+import DateBlock from "../atoms/DateBlock";
+import FacebookEventButton from "../atoms/FacebookEventButton";
+import TicketsButton from "../atoms/TicketsButton";
+import ArtistAvatar from "../atoms/ArtistAvatar";
 import { Artist } from "../../data/artists";
 import ReactCountryFlag from "react-country-flag";
 
@@ -32,7 +32,7 @@ function EventCard_v2({ event, isFuture }: Props) {
       <div className="relative overflow-hidden w-full aspect-square bg-gray-700">
         {/* Date Block */}
         <div className="absolute top-1.5 left-1.5 md:top-3 md:left-3 z-10">
-          <DateBlockResponsive
+          <DateBlock
             date={event.date.getDate()}
             monthName={monthName}
             year={event.date.getFullYear()}
@@ -41,13 +41,13 @@ function EventCard_v2({ event, isFuture }: Props) {
         </div>
         {/* Flag Container */}
         <div className="absolute top-1.5 right-1.5 w-5 h-4 md:top-3 md:right-3 md:w-6 md:h-5 inline-flex items-center justify-center shrink-0 rounded-xs overflow-hidden">
-            <ReactCountryFlag
-              countryCode={event.address.country.code}
-              svg
-              style={{ width: "2em", height: "1em" }}
-              className="rounded-xs"
-            />
-          </div>
+          <ReactCountryFlag
+            countryCode={event.address.country.code}
+            svg
+            style={{ width: "2em", height: "1em" }}
+            className="rounded-xs"
+          />
+        </div>
         {/* Image */}
         <img
           src={event.image}
@@ -58,12 +58,10 @@ function EventCard_v2({ event, isFuture }: Props) {
         <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/60 to-transparent pointer-events-none z-10"></div>
         {/* Link Icons */}
         <div className="absolute bottom-1.5 md:bottom-3 w-full flex items-center justify-between pt-3 px-1.5 md:px-3 z-20">
-          <FacebookEventButtonResponsive event={event} startSize="small" />
+          <FacebookEventButton event={event} startSize="small" />
 
           {/* Ticket Button */}
-          {isFuture && (
-            <TicketsButtonResponsive event={event} startSize="small" />
-          )}
+          {isFuture && <TicketsButton event={event} startSize="small" />}
         </div>
       </div>
 
@@ -102,7 +100,7 @@ function EventCard_v2({ event, isFuture }: Props) {
               (
                 artist: Artist // Show max 5
               ) => (
-                <ArtistAvatarResponsive
+                <ArtistAvatar
                   key={artist.id}
                   artist={artist}
                   startSize="small"
@@ -115,7 +113,9 @@ function EventCard_v2({ event, isFuture }: Props) {
           )}
           {/* "+X More" Indicator */}
           {event.artists && event.artists.length > 5 && (
-            <span className="flex items-center justify-center text-xs font-semibold  z-10 relative -ml-4"> {/* original classname: "flex items-center justify-center h-10 w-10 rounded-full bg-gray-600 text-xs font-semibold ring-2 ring-black/50 z-10 relative -ml-4"*/}
+            <span className="flex items-center justify-center text-xs font-semibold  z-10 relative -ml-4">
+              {" "}
+              {/* original classname: "flex items-center justify-center h-10 w-10 rounded-full bg-gray-600 text-xs font-semibold ring-2 ring-black/50 z-10 relative -ml-4"*/}
               +{event.artists.length - 5}
             </span>
           )}

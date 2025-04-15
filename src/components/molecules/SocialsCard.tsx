@@ -29,8 +29,8 @@ function SocialsCard({ artist }: SocialsProps) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-4 text-gray-300 hover:text-white transition-colors duration-200"
         >
-          <PiSoundcloudLogoFill className="h-6 w-6 flex-shrink-0" />
-          <span className="text-lg">
+          <PiSoundcloudLogoFill className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+          <span className="text-md md:text-lg lg:text-xl">
             {t("artistDetails.socials.soundCloud")}
           </span>
         </a>
@@ -42,8 +42,8 @@ function SocialsCard({ artist }: SocialsProps) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-4 text-gray-300 hover:text-white transition-colors duration-200"
         >
-          <FaSpotify className="h-6 w-6 flex-shrink-0" />
-          <span className="text-lg">{t("artistDetails.socials.spotify")}</span>
+          <FaSpotify className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+          <span className="text-md md:text-lg lg:text-xl">{t("artistDetails.socials.spotify")}</span>
         </a>
       )}
       {artist.socialLinks.youtube && (
@@ -53,8 +53,8 @@ function SocialsCard({ artist }: SocialsProps) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-4 text-gray-300 hover:text-white transition-colors duration-200"
         >
-          <FaYoutube className="h-6 w-6 flex-shrink-0" />
-          <span className="text-lg">{t("artistDetails.socials.youtube")}</span>
+          <FaYoutube className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+          <span className="text-md md:text-lg lg:text-xl">{t("artistDetails.socials.youtube")}</span>
         </a>
       )}
       {artist.socialLinks.facebook && (
@@ -64,8 +64,8 @@ function SocialsCard({ artist }: SocialsProps) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-4 text-gray-300 hover:text-white transition-colors duration-200"
         >
-          <FaFacebook className="h-6 w-6 flex-shrink-0" />
-          <span className="text-lg">{t("artistDetails.socials.facebook")}</span>
+          <FaFacebook className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+          <span className="text-md md:text-lg lg:text-xl">{t("artistDetails.socials.facebook")}</span>
         </a>
       )}
       {artist.socialLinks.instagram && (
@@ -75,8 +75,8 @@ function SocialsCard({ artist }: SocialsProps) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-4 text-gray-300 hover:text-white transition-colors duration-200"
         >
-          <FaInstagram className="h-6 w-6 flex-shrink-0" />
-          <span className="text-lg">
+          <FaInstagram className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+          <span className="text-md md:text-lg lg:text-xl">
             {t("artistDetails.socials.instagram")}
           </span>
         </a>
@@ -88,8 +88,8 @@ function SocialsCard({ artist }: SocialsProps) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-4 text-gray-300 hover:text-white transition-colors duration-200"
         >
-          <FaTiktok className="h-6 w-6 flex-shrink-0" />
-          <span className="text-lg">{t("artistDetails.socials.tiktok")}</span>
+          <FaTiktok className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+          <span className="text-md md:text-lg lg:text-xl">{t("artistDetails.socials.tiktok")}</span>
         </a>
       )}
       {artist.socialLinks.website && (
@@ -99,8 +99,8 @@ function SocialsCard({ artist }: SocialsProps) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-4 text-gray-300 hover:text-white transition-colors duration-200"
         >
-          <BsGlobe2 className="h-6 w-6 flex-shrink-0" />
-          <span className="text-lg">{t("artistDetails.socials.website")}</span>
+          <BsGlobe2 className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+          <span className="text-md md:text-lg lg:text-xl">{t("artistDetails.socials.website")}</span>
         </a>
       )}
     </div>
