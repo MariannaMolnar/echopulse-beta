@@ -1,19 +1,37 @@
-import { artists } from "../data/artists";
+import { Artist, artists } from "../data/artists";
 import { useParams } from "react-router";
-import { Artist } from "../data/artists";
 import ProfileHeader from "../components/molecules/ProfileHeader";
 import ArtistAbout from "../components/molecules/ArtistAbout";
 import SocialsCard from "../components/molecules/SocialsCard";
+import { Event, events } from "../data/events";
 
-function getArtist(artistName: string | undefined): Artist | null {
+type ArtistName = string | undefined;
+
+function getArtist(artistName: ArtistName): Artist | null {
   if (!artistName) return null;
   const artistInDb = artists.filter((artist) => artist.name === artistName)[0];
   return artistInDb;
 }
 
+function getArtistNextEvents(artistName: ArtistName, limit: number): Event[] | null {
+  if (!artistName) return null;
+  const currentDate = new Date();
+  const artistEvents = events
+  .filter((event) => {
+    const eventArtistNames = event.artists.map((artist) => artist.name);
+    return eventArtistNames.includes(artistName) && event.date >= currentDate;
+  })
+  .sort((a, b) => a.date.getTime() - b.date.getTime())
+  .slice(0, limit);
+  
+
+  return artistEvents;
+}
+
 function ArtistDetailsPage() {
   const { artistName } = useParams();
   const artist = getArtist(artistName);
+  const artistNextThreeEvents = getArtistNextEvents(artistName, 3);
 
   return (
     artist && (
@@ -30,7 +48,7 @@ function ArtistDetailsPage() {
             {/* Right column section */}
             <div className="order-1 lg:order-none w-full text-gray-300 rounded-xl shadow-lg pb-4 mt-4 md:pb-6">
               {/* Socials section */}
-              <SocialsCard artist={artist}/>
+              <SocialsCard artist={artist} />
               {/* Next Events section */}
             </div>
           </div>
