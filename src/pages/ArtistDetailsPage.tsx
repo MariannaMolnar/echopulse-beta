@@ -14,17 +14,19 @@ function getArtist(artistName: ArtistName): Artist | null {
   return artistInDb;
 }
 
-function getArtistNextEvents(artistName: ArtistName, limit: number): Event[] | null {
+function getArtistNextEvents(
+  artistName: ArtistName,
+  limit: number
+): Event[] | null {
   if (!artistName) return null;
   const currentDate = new Date();
   const artistEvents = events
-  .filter((event) => {
-    const eventArtistNames = event.artists.map((artist) => artist.name);
-    return eventArtistNames.includes(artistName) && event.date >= currentDate;
-  })
-  .sort((a, b) => a.date.getTime() - b.date.getTime())
-  .slice(0, limit);
-  
+    .filter((event) => {
+      const eventArtistNames = event.artists.map((artist) => artist.name);
+      return eventArtistNames.includes(artistName) && event.date >= currentDate;
+    })
+    .sort((a, b) => a.date.getTime() - b.date.getTime())
+    .slice(0, limit);
 
   return artistEvents;
 }
@@ -41,7 +43,7 @@ function ArtistDetailsPage() {
           {/* Header section */}
           <ProfileHeader artist={artist} />
           {/* Details section */}
-          <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[75%_25%] lg:gap-4 xl:gap-5 lg:pr-6 mt-6 md:mt-8">
+          <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[60%_40%] xl:grid-cols-[75%_25%] lg:gap-4 xl:gap-5 lg:pr-6 mt-6 md:mt-8">
             {/* Left column - About section */}
             <div className="order-2 lg:order-none">
               <ArtistAbout artist={artist} />
@@ -51,7 +53,9 @@ function ArtistDetailsPage() {
               {/* Socials section */}
               <SocialsCard artist={artist} />
               {/* Next Events section */}
-              <ArtistNextEvents artistNextEvents={artistNextThreeEvents}/>
+              {artistNextThreeEvents && (
+                <ArtistNextEvents artistNextEvents={artistNextThreeEvents} />
+              )}
             </div>
           </div>
         </div>
