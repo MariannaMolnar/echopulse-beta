@@ -21,6 +21,7 @@ function TicketsButtonResponsive({ event, startSize = "midi" }: Props) {
       href={event.ticketsLink}
       target="_blank"
       className={`bg-blue-600 hover:bg-blue-700 text-white font-bold tracking-wide transition-colors
+        text-center
       ${responsiveLinkClasses[startSize]}`}
     >
       {t("events.ticketsBtn")}
