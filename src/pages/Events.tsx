@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { events } from "../data/events";
 import { Event } from "../data/events";
 import { useEffect, useState } from "react";
-import NextEventCardResp from "../components/molecules/NextEventCardResp";
+import NextEventCard from "../components/molecules/NextEventCard";
 import EventCard from "../components/molecules/EventCard";
 import EventCard_v2 from "../components/molecules/EventCard_v2";
 
@@ -74,7 +74,7 @@ function Events() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {/* Next event cards - responsive*/}
             {nextTwoEvents.map((nextEvent) => (
-              <NextEventCardResp key={nextEvent.id} event={nextEvent} />
+              <NextEventCard key={nextEvent.id} event={nextEvent} />
             ))}
           </div>
         </div>
@@ -111,11 +111,19 @@ function Events() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-2 md:gap-6 lg:gap-8">
           {filter === "future" &&
             futureEvents.map((event) => (
-              <EventCard key={event.id} event={event} isFuture={isFutureDate(event.date)}/>
+              <EventCard
+                key={event.id}
+                event={event}
+                isFuture={isFutureDate(event.date)}
+              />
             ))}
           {filter === "past" &&
             pastEvents.map((event) => (
-              <EventCard_v2 key={event.id} event={event} isFuture={isFutureDate(event.date)}/>
+              <EventCard_v2
+                key={event.id}
+                event={event}
+                isFuture={isFutureDate(event.date)}
+              />
             ))}
         </div>
       </div>

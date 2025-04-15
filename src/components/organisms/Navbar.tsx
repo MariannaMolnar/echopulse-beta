@@ -117,30 +117,35 @@ function Navbar() {
           <Link
             to="/"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+            onClick={toggleMenu}
           >
             {t("navbar.home")}
           </Link>
           <Link
             to="/events"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+            onClick={toggleMenu}
           >
             {t("navbar.events")}
           </Link>
           <Link
             to="/artists"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+            onClick={toggleMenu}
           >
             {t("navbar.artists")}
           </Link>
           <Link
             to="/about"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+            onClick={toggleMenu}
           >
             {t("navbar.about")}
           </Link>
           <Link
             to="/contact"
             className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+            onClick={toggleMenu}
           >
             {t("navbar.contact")}
           </Link>
