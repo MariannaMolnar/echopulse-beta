@@ -5,6 +5,7 @@ import ArtistAbout from "../components/molecules/ArtistAbout";
 import SocialsCard from "../components/molecules/SocialsCard";
 import { Event, events } from "../data/events";
 import ArtistNextEvents from "../components/molecules/ArtistNextEvents";
+import MusicPlayer from "../components/molecules/MusicPlayer";
 
 type ArtistName = string | undefined;
 
@@ -56,6 +57,7 @@ function ArtistDetailsPage() {
               {artistNextThreeEvents && (
                 <ArtistNextEvents artistNextEvents={artistNextThreeEvents} />
               )}
+              <MusicPlayer artist={artist} />
             </div>
           </div>
         </div>
