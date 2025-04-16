@@ -21,6 +21,16 @@ export type LanguageSpecificString = {
   hu: string;
 };
 
+type SocialLinks = {
+  soundCloud?: string;
+  spotify?: string;
+  youtube?: string;
+  facebook?: string;
+  website?: string;
+  instagram?: string;
+  tiktok?: string;
+};
+
 export interface Artist {
   id: string;
   name: string;
@@ -29,17 +39,46 @@ export interface Artist {
     code: string;
   };
   description: LanguageSpecificString;
-  socialLinks: {
-    soundCloud?: string;
-    spotify?: string;
-    youtube?: string;
-    facebook?: string;
-    website?: string;
-    instagram?:string;
-    tiktok?: string;
-  };
+  socialLinks: SocialLinks;
   image: string;
+  embedding: {
+    soundcloud?: string;
+    spotify?: string;
+  };
 }
+
+const meoCulpaLinks = {
+  singleTrack: {
+    soundcloud: `<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2052324496&color=%230a1920&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/meoculpa" title="MΣO CULPA" target="_blank" style="color: #cccccc; text-decoration: none;">MΣO CULPA</a> · <a href="https://soundcloud.com/meoculpa/tilos-cokxpon-mix-eklektik" title="Meo Culpa aka. morphēo ● Cökxpôn Ambient Radio Show | TILOS RADIO" target="_blank" style="color: #cccccc; text-decoration: none;">Meo Culpa aka. morphēo ● Cökxpôn Ambient Radio Show | TILOS RADIO</a></div>`,
+    spotify: ``,
+  },
+  playlist: {
+    soundcloud: `<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1974840528&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/meoculpa" title="MΣO CULPA" target="_blank" style="color: #cccccc; text-decoration: none;">MΣO CULPA</a> · <a href="https://soundcloud.com/meoculpa/sets/meo-culpa-baladi-ethnotech" title="Meo Culpa &amp; Baladi PLAYLIST @ Ethnotech-Kassa hajó" target="_blank" style="color: #cccccc; text-decoration: none;">Meo Culpa &amp; Baladi PLAYLIST @ Ethnotech-Kassa hajó</a></div>`,
+    spotify: ``,
+  },
+};
+
+const medicinaLinks = {
+  singleTrack: {
+    soundcloud: ``,
+    spotify: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4iHq3KGAs0FSTbpzyNgXvE?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+  },
+  playlist: {
+    soundcloud: ``,
+    spotify: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4eLsyhKi6u20mrDwMxJRD3?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+  },
+};
+
+const medicinaLinksCompact = {
+  singleTrack: {
+    soundcloud: ``,
+    spotify: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4iHq3KGAs0FSTbpzyNgXvE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+  },
+  playlist: {
+    soundcloud: ``,
+    spotify: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4eLsyhKi6u20mrDwMxJRD3?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+  },
+};
 
 export const artists: Artist[] = [
   {
@@ -69,6 +108,9 @@ export const artists: Artist[] = [
       spotify: "https://spotify.com/shadowecho",
     },
     image: artistImg1,
+    embedding: {
+      soundcloud: meoCulpaLinks.singleTrack.soundcloud,
+    },
   },
   {
     id: "2",
@@ -94,6 +136,9 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/pulsetrio",
     },
     image: artistImg2,
+    embedding: {
+      soundcloud: meoCulpaLinks.singleTrack.soundcloud,
+    },
   },
   {
     id: "3",
@@ -120,6 +165,9 @@ export const artists: Artist[] = [
       spotify: "https://spotify.com/aurorabeats",
     },
     image: artistImg3,
+    embedding: {
+      soundcloud: meoCulpaLinks.playlist.soundcloud,
+    },
   },
   {
     id: "4",
@@ -147,6 +195,9 @@ export const artists: Artist[] = [
       spotify: "https://spotify.com/basssiren",
     },
     image: artistImg4,
+    embedding: {
+      soundcloud: meoCulpaLinks.playlist.soundcloud,
+    },
   },
   {
     id: "5",
@@ -171,6 +222,9 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/echostring",
     },
     image: artistImg5,
+    embedding: {
+      spotify: medicinaLinks.singleTrack.spotify,
+    },
   },
   {
     id: "6",
@@ -197,6 +251,9 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/windwhisper",
     },
     image: artistImg6,
+    embedding: {
+      spotify: medicinaLinks.playlist.spotify,
+    },
   },
   {
     id: "7",
@@ -224,6 +281,9 @@ export const artists: Artist[] = [
       spotify: "https://spotify.com/psyflow",
     },
     image: artistImg7,
+    embedding: {
+      soundcloud: meoCulpaLinks.playlist.soundcloud,
+    },
   },
   {
     id: "8",
@@ -251,6 +311,9 @@ export const artists: Artist[] = [
       spotify: "https://spotify.com/steelresonance",
     },
     image: artistImg8,
+    embedding: {
+      spotify: medicinaLinksCompact.singleTrack.spotify,
+    },
   },
   {
     id: "9",
@@ -275,6 +338,9 @@ export const artists: Artist[] = [
       spotify: "https://spotify.com/healingrhythms",
     },
     image: artistImg9,
+    embedding: {
+      spotify: medicinaLinksCompact.playlist.spotify,
+    },
   },
   {
     id: "10",
@@ -301,6 +367,9 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/rootsmovement",
     },
     image: artistImg10,
+    embedding: {
+      soundcloud: meoCulpaLinks.playlist.soundcloud,
+    },
   },
   {
     id: "11",
@@ -327,6 +396,9 @@ export const artists: Artist[] = [
       facebook: "https://facebook.com/afropulse",
     },
     image: artistImg11,
+    embedding: {
+      soundcloud: meoCulpaLinks.singleTrack.soundcloud,
+    },
   },
   {
     id: "12",
@@ -354,6 +426,9 @@ export const artists: Artist[] = [
       spotify: "https://spotify.com/lunarvibes",
     },
     image: artistImg12,
+    embedding: {
+      soundcloud: meoCulpaLinks.singleTrack.soundcloud,
+    },
   },
   {
     id: "13",
@@ -385,6 +460,9 @@ export const artists: Artist[] = [
       tiktok: "https://tiktok.com/@psymirage.official",
     },
     image: artistImg13,
+    embedding: {
+      soundcloud: meoCulpaLinks.playlist.soundcloud,
+    },
   },
   {
     id: "14",
@@ -411,5 +489,8 @@ export const artists: Artist[] = [
       website: "https://cyberpulsemusic.com",
     },
     image: artistImg14,
+    embedding: {
+      soundcloud: meoCulpaLinks.singleTrack.soundcloud,
+    },
   },
 ];
