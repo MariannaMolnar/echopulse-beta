@@ -1,11 +1,11 @@
 import { Artist } from "../../data/artists";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 
 type MusicPlayerProps = {
   artist: Artist;
 };
 
-function SCMusicPlayer({ artist }: MusicPlayerProps) {
+function MusicPlayer({ artist }: MusicPlayerProps) {
   const artistSCEmbedding = artist.embedding.soundcloud;
   const artistSpotifyEmbedding = artist.embedding.spotify;
   return (
@@ -16,4 +16,4 @@ function SCMusicPlayer({ artist }: MusicPlayerProps) {
   );
 }
 
-export default SCMusicPlayer;
+export default MusicPlayer;
