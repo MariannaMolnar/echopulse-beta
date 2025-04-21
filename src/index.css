@@ -15,11 +15,6 @@
   }
 
 
-  /* All Artists */
-  .allArtists-title {
-    @apply text-3xl font-semibold text-gray-300 relative -top-10 sm:text-4xl;
-  }
-
   /* Artist card */
   .artist-card {
     @apply flex flex-col bg-[#f0edf2] overflow-hidden rounded-md text-black border-[1px] border-[#140b22];

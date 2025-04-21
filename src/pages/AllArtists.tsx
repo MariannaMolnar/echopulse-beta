@@ -10,7 +10,7 @@ function AllArtists() {
       <div className="w-full bg-black/60 text-gray-300 py-20 px-6 rounded-xl shadow-lg">
         {/* Page title */}
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="allArtists-title">{t("allArtists.title")}</h2>
+          <h2 className="text-3xl font-semibold text-gray-300 relative -top-10 sm:text-4xl">{t("allArtists.title")}</h2>
         </div>
 
         {/* Filter and search - to be implemented later */}
