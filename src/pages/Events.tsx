@@ -85,10 +85,10 @@ function Events() {
             onClick={() => {
               if (filter === "past") setFilter("future");
             }}
-            className={`filter-btn ${
+            className={`inline-block rounded-full border px-4 py-1.5 text-base font-medium transition-colors duration-200 ease-in-out cursor-pointer whitespace-nowrap  ${
               filter === "future"
-                ? "filter-btn-active" // Active state class
-                : "filter-btn-inactive" // Inactive state class (optional, for hover etc.)
+                ? "bg-gray-600 border-gray-600 text-white" // Active state class
+                : "hover:bg-gray-700/50 hover:border-gray-400 hover:text-white" // Inactive state class (optional, for hover etc.)
             }`}
           >
             <span>{t("events.filterButton.future")}</span>
@@ -97,10 +97,10 @@ function Events() {
             onClick={() => {
               if (filter === "future") setFilter("past");
             }}
-            className={`filter-btn ${
+            className={`inline-block rounded-full border px-4 py-1.5 text-base font-medium transition-colors duration-200 ease-in-out cursor-pointer whitespace-nowrap  ${
               filter === "past"
-                ? "filter-btn-active" // Active state class
-                : "filter-btn-inactive" // Inactive state class (optional, for hover etc.)
+                ? "bg-gray-600 border-gray-600 text-white" // Active state class
+                : "hover:bg-gray-700/50 hover:border-gray-400 hover:text-white" // Inactive state class (optional, for hover etc.)
             }`}
           >
             <span>{t("events.filterButton.past")}</span>
