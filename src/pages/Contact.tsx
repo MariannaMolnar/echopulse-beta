@@ -7,7 +7,7 @@ function Contact() {
     <div className="isolate w-full flex flex-col items-center px-6 py-24 sm:py-32 lg:px-8">
       <div className="w-full max-w-6xl bg-black/60 text-gray-300 py-20 px-6 rounded-xl shadow-lg">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="contact-us-title">{t("contact.title")}</h2>
+          <h2 className="text-3xl font-semibold tracking-tight text-balance text-gray-300 relative -top-10 sm:text-4xl">{t("contact.title")}</h2>
           <p className="mt-2 text-lg/8 text-gray-400">
             {t("contact.description")}
           </p>
@@ -16,7 +16,7 @@ function Contact() {
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             {/* First name field */}
             <div>
-              <label htmlFor="first-name" className="form-label">
+              <label htmlFor="first-name" className="block text-base/8 font-semibold text-gray-300">
                 {t("contact.formLabels.firstName")}
               </label>
               <div className="mt-2.5">
@@ -25,14 +25,14 @@ function Contact() {
                   name="first-name"
                   type="text"
                   autoComplete="given-name"
-                  className="form-input-field"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                 />
               </div>
             </div>
 
             {/* Last name field */}
             <div>
-              <label htmlFor="last-name" className="form-label">
+              <label htmlFor="last-name" className="block text-base/8 font-semibold text-gray-300">
                 {t("contact.formLabels.lastName")}
               </label>
               <div className="mt-2.5">
@@ -41,14 +41,14 @@ function Contact() {
                   name="last-name"
                   type="text"
                   autoComplete="family-name"
-                  className="form-input-field"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                 />
               </div>
             </div>
 
             {/* Subject field */}
             <div className="sm:col-span-2">
-              <label htmlFor="subject" className="form-label">
+              <label htmlFor="subject" className="block text-base/8 font-semibold text-gray-300">
                 {t("contact.formLabels.subject")}
               </label>
               <div className="mt-2.5">
@@ -57,14 +57,14 @@ function Contact() {
                   name="subject"
                   type="text"
                   autoComplete="organization"
-                  className="form-input-field"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                 />
               </div>
             </div>
 
             {/* Email field */}
             <div className="sm:col-span-2">
-              <label htmlFor="email" className="form-label">
+              <label htmlFor="email" className="block text-base/8 font-semibold text-gray-300">
                 {t("contact.formLabels.email")}
               </label>
               <div className="mt-2.5">
@@ -73,14 +73,14 @@ function Contact() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="form-input-field"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                 />
               </div>
             </div>
 
             {/* Message field */}
             <div className="sm:col-span-2">
-              <label htmlFor="message" className="form-label">
+              <label htmlFor="message" className="block text-base/8 font-semibold text-gray-300">
                 {t("contact.formLabels.message")}
               </label>
               <div className="mt-2.5">
@@ -88,7 +88,7 @@ function Contact() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="form-input-field"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   defaultValue={""}
                 />
               </div>
