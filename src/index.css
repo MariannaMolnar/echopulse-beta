@@ -14,22 +14,4 @@
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, black 20%);
   }
 
-
-  /* Events */
-  /* Base style for filter buttons */
-  .filter-btn {
-    @apply inline-block rounded-full border px-4 py-1.5 text-base font-medium transition-colors duration-200 ease-in-out cursor-pointer whitespace-nowrap;
-    /* Default inactive appearance */
-    @apply border-gray-600 text-gray-300 bg-transparent;
-  }
-
-  /* Specific style for inactive state (e.g., for hover) */
-  .filter-btn-inactive {
-    @apply hover:bg-gray-700/50 hover:border-gray-400 hover:text-white;
-  }
-
-  /* Style for the ACTIVE button */
-  .filter-btn-active {
-    @apply bg-gray-600 border-gray-600 text-white;
-  }
 }
