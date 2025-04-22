@@ -43,7 +43,7 @@ function Navbar() {
             </div>
             <a
               href="/"
-              className="text-xl font-bold text-gray-500 whitespace-nowrap overflow-hidden"
+              className="text-xl font-bold text-gray-500 whitespace-nowrap overflow-hidden font-hackney"
             >
               EchoPulse Records
             </a>
@@ -55,31 +55,31 @@ function Navbar() {
             <div className="hidden md:flex space-x-6 me-6">
               <Link
                 to="/"
-                className="text-gray-300 font-bold hover:text-blue-600"
+                className="text-gray-300 font-bold hover:text-blue-600 font-nexaRustSansBook"
               >
                 {t("navbar.home")}
               </Link>
               <Link
                 to="/events"
-                className="text-gray-300 font-bold hover:text-blue-600"
+                className="text-gray-300 font-bold hover:text-blue-600 font-nexaRustSansBook"
               >
                 {t("navbar.events")}
               </Link>
               <Link
                 to="/artists"
-                className="text-gray-300 font-bold hover:text-blue-600"
+                className="text-gray-300 font-bold hover:text-blue-600 font-nexaRustSansBook"
               >
                 {t("navbar.artists")}
               </Link>
               <Link
                 to="/about"
-                className="text-gray-300 font-bold hover:text-blue-600"
+                className="text-gray-300 font-bold hover:text-blue-600 font-nexaRustSansBook"
               >
                 {t("navbar.about")}
               </Link>
               <Link
                 to="/contact"
-                className="text-gray-300 font-bold hover:text-blue-600"
+                className="text-gray-300 font-bold hover:text-blue-600 font-nexaRustSansBook"
               >
                 {t("navbar.contact")}
               </Link>
@@ -116,35 +116,35 @@ function Navbar() {
         <div className="md:hidden absolute right-0 w-24 bg-black/70 rounded-md shadow-lg">
           <Link
             to="/"
-            className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-nexaRustSansBook"
             onClick={toggleMenu}
           >
             {t("navbar.home")}
           </Link>
           <Link
             to="/events"
-            className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-nexaRustSansBook"
             onClick={toggleMenu}
           >
             {t("navbar.events")}
           </Link>
           <Link
             to="/artists"
-            className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-nexaRustSansBook"
             onClick={toggleMenu}
           >
             {t("navbar.artists")}
           </Link>
           <Link
             to="/about"
-            className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-nexaRustSansBook"
             onClick={toggleMenu}
           >
             {t("navbar.about")}
           </Link>
           <Link
             to="/contact"
-            className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-nexaRustSansBook"
             onClick={toggleMenu}
           >
             {t("navbar.contact")}
