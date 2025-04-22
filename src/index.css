@@ -1,5 +1,32 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Hackney';
+  src: url('../src/assets/fonts/HackneyPersonalUseOnly.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NexaBook';
+  src: url('../src/assets/fonts/Nexa-Book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NexaRustSansBook';
+  src: url('../src/assets/fonts/Nexa-Rust-Sans-Book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NexaRustSansBlack';
+  src: url('../src/assets/fonts/Nexa-Rust-Sans-Black.otf') format('opentype');
+}
+
+@theme {
+  --font-hackney: "Hackney", "sans-serif";
+  --font-nexaBook: "NexaBook", "sans-serif";
+  --font-nexaRustSansBook: "NexaRustSansBook", "sans-serif";
+  --font-nexaRustSansBlack: "NexaRustSansBlack", "sans-serif";
+}
+
 @layer utilities {
   .bg-background-1 {
     background-image: url("./assets/wood.jpg");
