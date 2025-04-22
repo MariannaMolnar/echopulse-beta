@@ -14,4 +14,7 @@
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, black 20%);
   }
 
+  .fade-out-2 {
+    background: linear-gradient(180deg, #000000 9.13%, rgba(0, 0, 0, 0) 100%);
+  }
 }
