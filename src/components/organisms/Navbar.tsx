@@ -38,32 +38,26 @@ function Navbar() {
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-6 me-6">
               <Link
-                to="/"
-                className="text-gray-300 font-bold hover:text-blue-600 font-nexaRustSansBook"
-              >
-                {t("navbar.home")}
-              </Link>
-              <Link
                 to="/events"
-                className="text-gray-300 font-bold hover:text-blue-600 font-nexaRustSansBook"
+                className="justify-start text-white text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.events")}
               </Link>
               <Link
                 to="/artists"
-                className="text-gray-300 font-bold hover:text-blue-600 font-nexaRustSansBook"
+                className="justify-start text-white text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.artists")}
               </Link>
               <Link
                 to="/about"
-                className="text-gray-300 font-bold hover:text-blue-600 font-nexaRustSansBook"
+                className="justify-start text-white text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.about")}
               </Link>
               <Link
                 to="/contact"
-                className="text-gray-300 font-bold hover:text-blue-600 font-nexaRustSansBook"
+                className="justify-start text-white text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.contact")}
               </Link>
