@@ -1,35 +1,19 @@
 import { useState } from "react";
-import {
-  Bars3Icon,
-  XMarkIcon,
-  GlobeAltIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logoImg from "../../assets/logo1.png";
 import Logo from "../atoms/Logo";
 import { useLanguage } from "../../context/LanguageContext";
-import LangDropdown from "../molecules/LangDropdown";
 import { useTranslation } from "react-i18next";
-import { SupportedLanguages } from "../../i18n";
 import { Link } from "react-router-dom";
-const LANGUAGES: { title: SupportedLanguages; countryCode: string }[] = [
-  { title: "en", countryCode: "GB" },
-  { title: "hu", countryCode: "HU" },
-];
+import LangSelect from "../molecules/LangSelect";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
   const { t } = useTranslation();
 
   function toggleMenu() {
     setIsOpen(!isOpen);
-    setLangDropdownOpen(false);
-  }
-
-  function toggleLangDropdown() {
-    setLangDropdownOpen(!langDropdownOpen);
-    setIsOpen(false);
   }
 
   return (
@@ -83,18 +67,9 @@ function Navbar() {
               >
                 {t("navbar.contact")}
               </Link>
+              {/* Language Select Button (both mobile and desktop) */}
+              <LangSelect language={language} setLanguage={setLanguage} />
             </div>
-
-            {/* Language Select Button and Dropdown (both mobile and desktop) */}
-            <LangDropdown
-              buttonText={language.toUpperCase()}
-              items={LANGUAGES}
-              setLanguage={setLanguage}
-              handleToggle={toggleLangDropdown}
-              isOpen={langDropdownOpen}
-            >
-              <GlobeAltIcon className="h-5 w-5" />
-            </LangDropdown>
 
             {/* Mobile Menu Button */}
             <button
