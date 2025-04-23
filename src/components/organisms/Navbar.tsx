@@ -43,7 +43,7 @@ function Navbar() {
             </div>
             <a
               href="/"
-              className="text-xl font-bold text-gray-500 whitespace-nowrap overflow-hidden font-hackney"
+              className="text-2xl font-bold text-gray-500 whitespace-nowrap overflow-hidden font-hackney"
             >
               EchoPulse Records
             </a>
