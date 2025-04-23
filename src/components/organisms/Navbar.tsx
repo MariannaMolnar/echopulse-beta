@@ -36,28 +36,28 @@ function Navbar() {
           {/* Right Section - Links and Language Selector */}
           <div className="flex items-center">
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-6 me-6">
+            <div className="hidden md:flex md:space-x-[40px] xl:space-x-[75px] 2xl:space-x-[111px] me-4">
               <Link
                 to="/events"
-                className="justify-start text-white text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
+                className="justify-start text-white text-lg xl:text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.events")}
               </Link>
               <Link
                 to="/artists"
-                className="justify-start text-white text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
+                className="justify-start text-white text-lg xl:text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.artists")}
               </Link>
               <Link
                 to="/about"
-                className="justify-start text-white text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
+                className="justify-start text-white text-lg xl:text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.about")}
               </Link>
               <Link
                 to="/contact"
-                className="justify-start text-white text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
+                className="justify-start text-white text-lg xl:text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.contact")}
               </Link>
