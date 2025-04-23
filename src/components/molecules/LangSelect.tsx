@@ -9,7 +9,7 @@ function LangSelect({ language, setLanguage }: LangSelectProps) {
   return (
     <div className="justify-start">
       <span
-        className={`text-xl font-normal font-nexaRustSansBook uppercase tracking-widest ${
+        className={`text-xl font-normal font-nexaRustSansBook uppercase tracking-widest cursor-pointer ${
           language === "hu" ? "text-sand" : "text-white"
         }`}
         onClick={() => {
@@ -23,7 +23,7 @@ function LangSelect({ language, setLanguage }: LangSelectProps) {
         /{" "}
       </span>
       <span
-        className={`text-xl font-normal font-nexaRustSansBook uppercase tracking-widest ${
+        className={`text-xl font-normal font-nexaRustSansBook uppercase tracking-widest cursor-pointer ${
           language === "en" ? `text-sand` : `text-white`
         }`}
         onClick={() => {
