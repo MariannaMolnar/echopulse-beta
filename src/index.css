@@ -25,6 +25,13 @@
   --font-nexaBook: "NexaBook", "sans-serif";
   --font-nexaRustSansBook: "NexaRustSansBook", "sans-serif";
   --font-nexaRustSansBlack: "NexaRustSansBlack", "sans-serif";
+
+  --color-greyScaleLight: #969696;
+  --color-greyScaleDarkLight: #5E5E5E;
+  --color-greyScaleMid: #313131;
+  --color-greyScaleDark: #1A1A1A;
+  --color-sand: #FFCE80;
+  --color-offWhite: #F0EBE2;
 }
 
 @layer utilities {
