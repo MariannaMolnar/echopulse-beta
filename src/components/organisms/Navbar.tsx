@@ -17,7 +17,7 @@ function Navbar() {
   }
 
   return (
-    <div className={`fixed z-50 ${isOpen && `md:hidden w-full h-[844px] bg-black/75 backdrop-blur-[10px]`} `}>
+    <div className={`fixed z-50 ${isOpen && `md:hidden w-full h-full bg-black/75 backdrop-blur-[10px]`} `}>
       <nav className="fixed w-full z-50 h-36 bg-gradient-to-b from-black to-black/0">
         <div className="max-w-screen mx-auto pl-5 pr-8 sm:px-8 lg:px-12 pt-8 pb-11">
           <div className="flex justify-between items-center h-16">
@@ -62,7 +62,7 @@ function Navbar() {
                 >
                   {t("navbar.contact")}
                 </Link>
-                {/* Language Select Button (both mobile and desktop) */}
+                {/* Language Select Button (desktop) */}
                 <LangSelect language={language} setLanguage={setLanguage} />
               </div>
 
@@ -99,42 +99,37 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden w-full h-[844px]">
-            <Link
-              to="/"
-              className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-smallCaps"
-              onClick={toggleMenu}
-            >
-              {t("navbar.home")}
-            </Link>
+          <div className="md:hidden w-full h-full flex flex-col gap-15 pt-6">
             <Link
               to="/events"
-              className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-smallCaps"
+              className="block px-4 py-2 text-center justify-start text-white text-4xl font-normal font-smallCaps uppercase tracking-[3.60px]"
               onClick={toggleMenu}
             >
               {t("navbar.events")}
             </Link>
             <Link
               to="/artists"
-              className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-smallCaps"
+              className="block px-4 py-2 text-center justify-start text-white text-4xl font-normal font-smallCaps uppercase tracking-[3.60px]"
               onClick={toggleMenu}
             >
               {t("navbar.artists")}
             </Link>
             <Link
               to="/about"
-              className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-smallCaps"
+              className="block px-4 py-2 text-center justify-start text-white text-4xl font-normal font-smallCaps uppercase tracking-[3.60px]"
               onClick={toggleMenu}
             >
               {t("navbar.about")}
             </Link>
             <Link
               to="/contact"
-              className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-smallCaps"
+              className="block px-4 py-2 text-center justify-start text-white text-4xl font-normal font-smallCaps uppercase tracking-[3.60px]"
               onClick={toggleMenu}
             >
               {t("navbar.contact")}
             </Link>
+            {/* Language Select Button (mobile) */}
+            <LangSelect language={language} setLanguage={setLanguage} />
           </div>
         )}
       </nav>

@@ -7,9 +7,9 @@ interface LangSelectProps {
 
 function LangSelect({ language, setLanguage }: LangSelectProps) {
   return (
-    <div className="justify-start">
+    <div className="justify-start text-center block px-4 py-2 md:p-0">
       <span
-        className={`text-lg xl:text-xl font-normal font-smallCaps uppercase tracking-widest cursor-pointer ${
+        className={`text-4xl md:text-lg xl:text-xl font-normal font-smallCaps uppercase tracking-[3.60px] md:tracking-widest cursor-pointer ${
           language === "hu" ? "text-sand" : "text-white"
         }`}
         onClick={() => {
@@ -18,12 +18,12 @@ function LangSelect({ language, setLanguage }: LangSelectProps) {
       >
         {"hu"}
       </span>
-      <span className="text-white text-lg xl:text-xl font-normal font-smallCaps uppercase tracking-widest">
+      <span className="text-white text-4xl md:text-lg xl:text-xl font-normal font-smallCaps uppercase tracking-[3.60px] md:tracking-widest">
         {" "}
         /{" "}
       </span>
       <span
-        className={`text-lg xl:text-xl font-normal font-smallCaps uppercase tracking-widest cursor-pointer ${
+        className={`text-4xl md:text-lg xl:text-xl font-normal font-smallCaps uppercase tracking-[3.60px] md:tracking-widest cursor-pointer ${
           language === "en" ? `text-sand` : `text-white`
         }`}
         onClick={() => {
