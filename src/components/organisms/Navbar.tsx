@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <nav className="fixed w-full z-50 h-36 bg-gradient-to-b from-black to-black/0">
-      <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-11">
+      <div className="max-w-screen mx-auto pl-5 pr-8 sm:px-8 lg:px-12 pt-8 pb-11">
         <div className="flex justify-between items-center h-16">
           {/* Left Section - Logo */}
           <div className="flex items-center">
@@ -73,7 +73,11 @@ function Navbar() {
               {isOpen ? (
                 <XMarkIcon className="h-8 w-8" />
               ) : (
-                <Bars3Icon className="h-8 w-8" />
+                <div className="w-8 h-5 relative">
+                  <div className={`bg-white w-8 h-0.5 rounded absolute top-1 -mt-1 transition-all duration-600 ease-out ${isOpen && `toggle-upperLine`}`}></div>
+                  <div className={`bg-white w-8 h-0.5 rounded absolute top-3 -mt-1 transition-all duration-600 ease-out ${isOpen && `toggle-midLine`}`}></div>
+                  <div className={`bg-white w-8 h-0.5 rounded absolute top-5 -mt-1 transition-all duration-600 ease-out ${isOpen && `toggle-lowerLine`}`}></div>
+                </div>
               )}
             </button>
           </div>

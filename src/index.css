@@ -42,4 +42,15 @@
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, black 20%);
   }
 
+  .toggle-upperLine {
+    @apply translate-y-0 rotate-45
+  }
+
+  .toggle-midLine {
+    @apply bg-transparent
+  }
+
+  .toggle-lowerLine {
+    @apply translate-y-0 -rotate-45
+  }
 }
