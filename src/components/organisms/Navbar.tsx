@@ -28,7 +28,7 @@ function Navbar() {
               </div>
               <a
                 href="/"
-                className="text-2xl font-bold text-gray-500 whitespace-nowrap overflow-hidden font-capMarker"
+                className="text-2xl md:text-4xl tracking-wide font-bold text-sand whitespace-nowrap overflow-hidden font-capMarker"
               >
                 EchoPulse Records
               </a>
