@@ -20,12 +20,12 @@
   --font-lowerAndCaps: "GroteskRounded", "sans-serif";
   --font-smallCaps: "ZingSansRustLight", "sans-serif";
 
-  --color-greyScaleLight: #969696;
-  --color-greyScaleDarkLight: #5E5E5E;
-  --color-greyScaleMid: #313131;
-  --color-greyScaleDark: #1A1A1A;
-  --color-sand: #FFCE80;
-  --color-offWhite: #F0EBE2;
+  --color-greyScaleLight: #a0a0a0;
+  --color-greyScaleDarkLight: #6e6e6e;
+  --color-greyScaleMid: #454545;
+  --color-greyScaleDark: #303030;
+  --color-sand: #ffd28c;
+  --color-offWhite: #f4f1ea;
 }
 
 @layer utilities {
