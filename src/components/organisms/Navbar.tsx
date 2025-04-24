@@ -27,7 +27,7 @@ function Navbar() {
             </div>
             <a
               href="/"
-              className="text-2xl font-bold text-gray-500 whitespace-nowrap overflow-hidden font-hackney"
+              className="text-2xl font-bold text-gray-500 whitespace-nowrap overflow-hidden font-capMarker"
             >
               EchoPulse Records
             </a>
@@ -39,25 +39,25 @@ function Navbar() {
             <div className="hidden md:flex md:space-x-[40px] xl:space-x-[75px] 2xl:space-x-[111px] me-4">
               <Link
                 to="/events"
-                className="justify-start text-white text-lg xl:text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
+                className="justify-start text-white text-lg xl:text-xl font-normal font-smallCaps uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.events")}
               </Link>
               <Link
                 to="/artists"
-                className="justify-start text-white text-lg xl:text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
+                className="justify-start text-white text-lg xl:text-xl font-normal font-smallCaps uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.artists")}
               </Link>
               <Link
                 to="/about"
-                className="justify-start text-white text-lg xl:text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
+                className="justify-start text-white text-lg xl:text-xl font-normal font-smallCaps uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.about")}
               </Link>
               <Link
                 to="/contact"
-                className="justify-start text-white text-lg xl:text-xl font-normal font-nexaRustSansBook uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
+                className="justify-start text-white text-lg xl:text-xl font-normal font-smallCaps uppercase tracking-widest hover:text-sand transition-colors duration-300 ease-out"
               >
                 {t("navbar.contact")}
               </Link>
@@ -85,35 +85,35 @@ function Navbar() {
         <div className="md:hidden absolute right-0 w-24 bg-black/70 rounded-md shadow-lg">
           <Link
             to="/"
-            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-nexaRustSansBook"
+            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-smallCaps"
             onClick={toggleMenu}
           >
             {t("navbar.home")}
           </Link>
           <Link
             to="/events"
-            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-nexaRustSansBook"
+            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-smallCaps"
             onClick={toggleMenu}
           >
             {t("navbar.events")}
           </Link>
           <Link
             to="/artists"
-            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-nexaRustSansBook"
+            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-smallCaps"
             onClick={toggleMenu}
           >
             {t("navbar.artists")}
           </Link>
           <Link
             to="/about"
-            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-nexaRustSansBook"
+            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-smallCaps"
             onClick={toggleMenu}
           >
             {t("navbar.about")}
           </Link>
           <Link
             to="/contact"
-            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-nexaRustSansBook"
+            className="block px-4 py-2 text-gray-300 hover:bg-gray-700 font-smallCaps"
             onClick={toggleMenu}
           >
             {t("navbar.contact")}
