@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 import logoImg from "../../assets/logo1.png";
 import Logo from "../atoms/Logo";
 import { useLanguage } from "../../context/LanguageContext";
@@ -17,7 +17,7 @@ function Navbar() {
   }
 
   return (
-    <div className={`fixed z-50 ${isOpen && `md:hidden w-full h-full bg-black/75 backdrop-blur-[10px]`} `}>
+    <div className={`fixed z-50 ${isOpen && `md:hidden w-full h-full bg-black/75 backdrop-blur-[10px] transition-all duration-700 ease-out`} `}>
       <nav className="fixed w-full z-50 h-36 bg-gradient-to-b from-black to-black/0">
         <div className="max-w-screen mx-auto pl-5 pr-8 sm:px-8 lg:px-12 pt-8 pb-11">
           <div className="flex justify-between items-center h-16">
