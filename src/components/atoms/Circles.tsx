@@ -1,12 +1,9 @@
-type CarouselItem = {
-  id: number;
-  type: string;
-};
+import { CarouselSlide } from "../../data/carousel";
 
 type Status = "active" | "inactive";
 
 type CirclesProps = {
-  items: CarouselItem[];
+  items: CarouselSlide[];
   activeIndex: number;
 };
 

@@ -1,8 +1,5 @@
 import { Artist, artists, LanguageSpecificString } from "./artists";
-import blackLeaves from "../images/backdrops/blackLeaves.jpg";
 import blackMoss from "../images/backdrops/blackMoss.jpg";
-import blackPlastic from "../images/backdrops/blackPlastic.jpg";
-import blackSplash from "../images/backdrops/blackSplash.jpg";
 
 import redMelt from "../images/backdrops/redMelt.jpg";
 import wood from "../assets/wood.jpg";
