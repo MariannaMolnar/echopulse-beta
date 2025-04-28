@@ -4,11 +4,7 @@ import blackMoss from "../images/backdrops/blackMoss.jpg";
 import blackPlastic from "../images/backdrops/blackPlastic.jpg";
 import blackSplash from "../images/backdrops/blackSplash.jpg";
 
-import blueMelt from "../images/backdrops/blueMelt.jpg";
-import orangeMelt from "../images/backdrops/orangeMelt.jpg";
 import redMelt from "../images/backdrops/redMelt.jpg";
-import sandImg from "../images/backdrops/sand.jpg";
-import warmWavesAndSplash from "../images/backdrops/warmWavesAndSplash.jpg";
 import wood from "../assets/wood.jpg";
 
 
@@ -80,7 +76,7 @@ export const carousel: CarouselSlide[] = [
         en: "New release",
       },
       artist: artists[0],
-      releaseTitle: "Shadow Echo - Confessions of the moss",
+      releaseTitle: "Shadow Echo\nConfessions of the moss",
     },
   },
 ];
