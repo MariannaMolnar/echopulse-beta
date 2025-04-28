@@ -40,7 +40,7 @@ function Carousel() {
           {/* Left Arrow */}
           <button
             onClick={goToPrev}
-            className="absolute top-1/2 left-2 md:left-14 -translate-y-1/2 z-20 p-2"
+            className="absolute top-1/2 left-2 md:left-14 -translate-y-1/2 z-20 p-2 cursor-pointer"
             aria-label="Previous slide"
           >
             <Arrow
@@ -51,7 +51,7 @@ function Carousel() {
           {/* Right Arrow */}
           <button
             onClick={goToNext}
-            className="absolute top-1/2 right-2 md:right-14 -translate-y-1/2 z-20 p-2"
+            className="absolute top-1/2 right-2 md:right-14 -translate-y-1/2 z-20 p-2 cursor-pointer"
             aria-label="Next slide"
           >
             <Arrow
