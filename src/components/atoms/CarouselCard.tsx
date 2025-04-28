@@ -33,23 +33,23 @@ function CarouselCard({ item }: CarouselCardProps) {
         {/* --- Conditional Content --- */}
         {/* Event Specific Layout */}
         {item.type === "event" && (
-          <div className="">
-            <p className="text-white text-6xl font-normal font-smallCaps uppercase leading-[107.40px] tracking-[6px]">
+          <div className="px-5">
+            <p className="text-white text-[26.412px] md:text-6xl font-normal font-smallCaps uppercase leading-[179%] md:leading-[107.40px] tracking-[2.64px] md:tracking-[6px]">
               {displayDate}
             </p>
-            <p className="text-white text-[193.94px] font-bold font-capMarker uppercase">
+            <p className="text-white text-[85.372px] md:text-[193.94px] font-bold font-capMarker uppercase leading-[85%] ">
               {item.data.title[language as keyof typeof item.data.title]}
             </p>
-            <p className="text-white text-6xl font-normal font-smallCaps uppercase leading-[107.40px] tracking-[6px]">
+            <p className="text-white text-[26.412px] md:text-6xl font-normal font-smallCaps uppercase leading-[179%] md:leading-[107.40px] tracking-[2.64px] md:tracking-[6px]">
               {item.data.venueName}
             </p>
           </div>
         )}
         {/* Release Specific Layout */}
         {item.type === "release" && (
-          <div>
-            <p className="text-white text-8xl font-bold font-capMarker uppercase leading-[210%] tracking-[2.70px]">{item.data.title[language as keyof typeof item.data.title]}</p>
-            <p className="whitespace-pre-line text-white text-8xl font-bold font-thickSmallCaps uppercase leading-[120%]">{item.data.releaseTitle}</p>
+          <div className="px-5">
+            <p className="text-white text-[41px] md:text-8xl font-bold font-capMarker uppercase leading-10 md:leading-[210%] tracking-wider md:tracking-[2.70px] pb-5 md:pb-0">{item.data.title[language as keyof typeof item.data.title]}</p>
+            <p className="whitespace-pre-line text-white text-4xl md:text-8xl font-bold font-thickSmallCaps uppercase leading-[140%] md:leading-[120%]">{item.data.releaseTitle}</p>
           </div>
         )}
       </div>
