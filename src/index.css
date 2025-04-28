@@ -15,10 +15,16 @@
   src: url('../src/assets/fonts/ZingSansRustLDemo-Base.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'NexaRustSansBlack';
+  src: url('../src/assets/fonts/NexaRustSans-Trial-Black2.ttf') format('truetype');
+}
+
 @theme {
   --font-capMarker: "Bernier", "sans-serif";
   --font-lowerAndCaps: "GroteskRounded", "sans-serif";
   --font-smallCaps: "ZingSansRustLight", "sans-serif";
+  --font-thickSmallCaps: "NexaRustSansBlack", "sans-serif";
 
   --color-greyScaleLight: #a0a0a0;
   --color-greyScaleDarkLight: #6e6e6e;
