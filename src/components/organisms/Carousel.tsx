@@ -6,8 +6,10 @@ import Circles from "../atoms/Circles";
 
 function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const totalItems = carousel.length;
 
+  // --- Navigation Functions ---
   function goToIndex(index: number) {
     const newIndex = (index + totalItems) % totalItems;
     setActiveIndex(newIndex);
@@ -21,8 +23,39 @@ function Carousel() {
     goToIndex(activeIndex - 1);
   }
 
+  // --- Swipe Handlers ---
+  function handleTouchStart(event: React.TouchEvent<HTMLDivElement>) {
+    if (event.touches && event.touches.length > 0) {
+      setTouchStartX(event.touches[0].clientX);
+    }
+  }
+
+  function handleTouchEnd(event: React.TouchEvent<HTMLDivElement>) {
+    if (touchStartX === null || totalItems <= 1) {
+      return; // Exit if swipe didn't start properly or not needed
+    }
+    const touchEndX = event.changedTouches[0].clientX;
+    const deltaX = touchEndX - touchStartX;
+    const threshold = 50; // Minimum pixel distance to register as a swipe
+
+    if (deltaX < -threshold) {
+      // Swiped Left (Next)
+      goToNext();
+    } else if (deltaX > threshold) {
+      // Swiped Right (Previous)
+      goToPrev();
+    }
+
+    setTouchStartX(null); // Reset start position
+  }
+
   return (
-    <div className="relative w-screen overflow-hidden" data-carousel="static">
+    <div
+      className="relative w-screen overflow-hidden"
+      
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
       {/* carousel wrapper */}
       <div
         className="flex transition-transform duration-700 ease-in-out"
@@ -40,7 +73,7 @@ function Carousel() {
           {/* Left Arrow */}
           <button
             onClick={goToPrev}
-            className="absolute top-1/2 left-2 md:left-14 -translate-y-1/2 z-20 p-2 cursor-pointer"
+            className="hidden md:absolute md:top-1/2 md:left-8 xl:left-14 md:-translate-y-1/2 md:z-20 md:p-2 md:cursor-pointer md:block"
             aria-label="Previous slide"
           >
             <Arrow
@@ -51,7 +84,7 @@ function Carousel() {
           {/* Right Arrow */}
           <button
             onClick={goToNext}
-            className="absolute top-1/2 right-2 md:right-14 -translate-y-1/2 z-20 p-2 cursor-pointer"
+            className="hidden md:absolute md:top-1/2 md:right-8 xl:right-14 md:-translate-y-1/2 md:z-20 md:p-2 md:cursor-pointer md:block"
             aria-label="Next slide"
           >
             <Arrow

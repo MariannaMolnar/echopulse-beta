@@ -29,7 +29,7 @@ function CarouselCard({ item }: CarouselCardProps) {
       />
 
       {/* Centered Content Area */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center p-4 md:p-8 text-white">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center md:mx-15 p-4 md:p-8 text-white">
         {/* --- Conditional Content --- */}
         {/* Event Specific Layout */}
         {item.type === "event" && (
