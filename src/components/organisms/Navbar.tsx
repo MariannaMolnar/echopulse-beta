@@ -129,7 +129,7 @@ function Navbar() {
               {t("navbar.contact")}
             </Link>
             {/* Language Select Button (mobile) */}
-            <LangSelect language={language} setLanguage={setLanguage} />
+            <LangSelect language={language} setLanguage={setLanguage} onLanguageSelect={toggleMenu}/>
           </div>
         )}
       </nav>
