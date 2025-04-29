@@ -3,9 +3,14 @@ import { SupportedLanguages } from "../../i18n";
 interface LangSelectProps {
   language: SupportedLanguages;
   setLanguage: (lang: SupportedLanguages) => void;
+  onLanguageSelect?: () => void;
 }
 
-function LangSelect({ language, setLanguage }: LangSelectProps) {
+function LangSelect({
+  language,
+  setLanguage,
+  onLanguageSelect,
+}: LangSelectProps) {
   return (
     <div className="justify-start text-center block px-4 py-2 md:p-0">
       <span
@@ -14,6 +19,9 @@ function LangSelect({ language, setLanguage }: LangSelectProps) {
         }`}
         onClick={() => {
           setLanguage("hu");
+          if (onLanguageSelect) {
+            onLanguageSelect();
+          }
         }}
       >
         {"hu"}
@@ -28,6 +36,9 @@ function LangSelect({ language, setLanguage }: LangSelectProps) {
         }`}
         onClick={() => {
           setLanguage("en");
+          if (onLanguageSelect) {
+            onLanguageSelect();
+          }
         }}
       >
         {"en"}

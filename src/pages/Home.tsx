@@ -1,27 +1,11 @@
-import React from "react";
+import Carousel from "../components/organisms/Carousel";
 
-//type Props = {}
-
-function Home(/*{}: Props*/) {
+function Home() {
   return (
     <>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
+      <div>
+        <Carousel />
+      </div>
       <div>Home</div>
       <div>Home</div>
       <div>Home</div>
