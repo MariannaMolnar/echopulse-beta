@@ -93,5 +93,29 @@
       "instagram": "Instagram",
       "tiktok": "TikTok"
     }
+  },
+  "home": {
+    "aboutUs": {
+      "title": "Ahol a világzene és az elektronikai hangzás találkozik",
+      "description": "Lorem ipsum dolor sit amet consectetur. Egestas sagittis consectetur in aliquet. Malesuada feugiat lorem magna dui mauris porta nunc dolor orci. Sem ut facilisi vitae velit. Facilisi tortor vitae pellentesque et interdum dolor et quis eget. Enim nec etiam velit viverra amet. Imperdiet ipsum donec viverra pellentesque.",
+      "btn": "tudj meg többet"
+    },
+    "featuredArtists": {
+      "title": "kiemelt előadóink",
+      "btn": "zenei előadóink"
+    },
+    "upcomingEvents": {
+      "title": "Közelgő események",
+      "btn":"Összes esemény"
+    },
+    "newsletter": {
+      "title": "iratkozz fel",
+      "description": "a hírlevelünkre",
+      "form": {
+        "nameField": "név",
+        "emailField": "email",
+        "btn": "feliratkozás"
+      }
+    }
   }
 }
