@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'GroteskRounded';
-  src: url('../src/assets/fonts/Typo-Grotesk-Rounded-Light-Demo.otf') format('opentype');
+  font-family: 'LarkeNeue';
+  src: url('../src/assets/fonts/Larke-Neue-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -22,7 +22,7 @@
 
 @theme {
   --font-capMarker: "Bernier", "sans-serif";
-  --font-lowerAndCaps: "GroteskRounded", "sans-serif";
+  --font-lowerAndCaps: "LarkeNeue", "sans-serif";
   --font-smallCaps: "ZingSansRustLight", "sans-serif";
   --font-thickSmallCaps: "NexaRustSansBlack", "sans-serif";
 

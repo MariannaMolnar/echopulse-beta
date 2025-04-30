@@ -93,5 +93,29 @@
       "instagram": "Instagram",
       "tiktok": "TikTok"
     }
+  },
+  "home": {
+    "aboutUs": {
+      "title": "Where world music \n& electronic beats collide",
+      "description": "Lorem ipsum dolor sit amet consectetur. Egestas sagittis consectetur in aliquet. Malesuada feugiat lorem magna dui mauris porta nunc dolor orci. Sem ut facilisi vitae velit. Facilisi tortor vitae pellentesque et interdum dolor et quis eget. Enim nec etiam velit viverra amet. Imperdiet ipsum donec viverra pellentesque.",
+      "btn": "more about us >"
+    },
+    "featuredArtists": {
+      "title": "featured artists",
+      "btn": "all artists >"
+    },
+    "upcomingEvents": {
+      "title": "upcoming events",
+      "btn":"all events >"
+    },
+    "newsletter": {
+      "title": "subscribe",
+      "description": "to our newsletter",
+      "form": {
+        "nameField": "name",
+        "emailField": "email",
+        "btn": "subscribe"
+      }
+    }
   }
 }
