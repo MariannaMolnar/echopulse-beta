@@ -7,7 +7,7 @@ function Icon({ logoSrc, size}: IconProps) {
 
   return (
     <img
-      className={`${size} object-contain`}
+      className={`${size} block`}
       src={logoSrc}
       alt="icon"
     />
