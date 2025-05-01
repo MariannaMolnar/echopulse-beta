@@ -21,7 +21,7 @@ function CarouselCard({ item }: CarouselCardProps) {
   }
 
   return (
-    <div className="flex-shrink-0 relative w-screen h-screen overflow-hidden">
+    <div className="flex-shrink-0 relative w-screen h-dvh overflow-hidden">
       <img
         src={item.imageUrl}
         alt={item.altText}
