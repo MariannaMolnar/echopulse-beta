@@ -20,6 +20,37 @@ export interface Event {
   artists: Artist[];
 }
 
+function sortEvents(events: Event[], sortType: "asc" | "desc") {
+  if (sortType === "asc") {
+    return [...events].sort((a, b) => a.date.getTime() - b.date.getTime());
+  }
+  return [...events].sort((a, b) => b.date.getTime() - a.date.getTime());
+}
+
+export function isFutureDate(eventDate: Date): boolean {
+  const currentDate = new Date();
+  return eventDate >= currentDate;
+}
+
+export function splitEventsByDate(sortedEvents: Event[]) {
+  const future: Event[] = [];
+  const past: Event[] = [];
+
+  sortedEvents.forEach((event) => {
+    const isFuture = isFutureDate(event.date);
+    if (isFuture) {
+      future.push(event);
+    } else {
+      past.push(event);
+    }
+  });
+
+  const futureAsc = sortEvents(future, "asc");
+  const pastDesc = sortEvents(past, "desc");
+
+  return { futureAsc, pastDesc };
+}
+
 export const events: Event[] = [
   {
     id: "1",
