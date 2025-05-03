@@ -5,37 +5,8 @@ import { useEffect, useState } from "react";
 import NextEventCard from "../components/molecules/NextEventCard";
 import EventCard from "../components/molecules/EventCard";
 import EventCard_v2 from "../components/molecules/EventCard_v2";
+import { splitEventsByDate, isFutureDate } from "../data/events";
 
-function sortEvents(events: Event[], sortType: "asc" | "desc") {
-  if (sortType === "asc") {
-    return [...events].sort((a, b) => a.date.getTime() - b.date.getTime());
-  }
-  return [...events].sort((a, b) => b.date.getTime() - a.date.getTime());
-}
-
-function isFutureDate(eventDate: Date): boolean {
-  const currentDate = new Date();
-  return eventDate >= currentDate;
-}
-
-function splitEventsByDate(sortedEvents: Event[]) {
-  const future: Event[] = [];
-  const past: Event[] = [];
-
-  sortedEvents.forEach((event) => {
-    const isFuture = isFutureDate(event.date);
-    if (isFuture) {
-      future.push(event);
-    } else {
-      past.push(event);
-    }
-  });
-
-  const futureAsc = sortEvents(future, "asc");
-  const pastDesc = sortEvents(past, "desc");
-
-  return { futureAsc, pastDesc };
-}
 
 function Events() {
   const { t } = useTranslation();

@@ -26,12 +26,17 @@ function Navbar() {
               <div className="me-4 flex-shrink-0">
                 <Logo h={50} logoSrc={logoImg} />
               </div>
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="text-2xl md:text-4xl tracking-wide font-bold text-sand whitespace-nowrap overflow-hidden font-capMarker"
+                onClick={() => {
+                  if (isOpen) {
+                    toggleMenu();
+                  }
+                }}
               >
                 EchoPulse Records
-              </a>
+              </Link>
             </div>
 
             {/* Right Section - Links and Language Selector */}
