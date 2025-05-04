@@ -28,8 +28,9 @@ function sortEvents(events: Event[], sortType: "asc" | "desc") {
 }
 
 export function isFutureDate(eventDate: Date): boolean {
-  const currentDate = new Date();
-  return eventDate >= currentDate;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return eventDate >= today;
 }
 
 export function splitEventsByDate(sortedEvents: Event[]) {
@@ -360,6 +361,13 @@ export const events: Event[] = [
       city: { en: "Oslo", hu: "Oslo" },
       country: { name: { en: "Norway", hu: "Norvégia" }, code: "NO" },
     },
-    artists: [artists[7], artists[12], artists[9], artists[10], artists[5], artists[3]], // Nordic Echo (Folk Band) & Emerald Spirits (Celtic Band)
+    artists: [
+      artists[7],
+      artists[12],
+      artists[9],
+      artists[10],
+      artists[5],
+      artists[3],
+    ], // Nordic Echo (Folk Band) & Emerald Spirits (Celtic Band)
   },
 ];
