@@ -115,6 +115,15 @@
         "nameField": "name",
         "emailField": "email",
         "btn": "subscribe"
+      },
+      "footer": {
+        "copyrights": "© echopulse 2025",
+        "privacyPolicy": "privacy policy",
+        "links": {
+          "instagram": "",
+          "facebook": "",
+          "soundcloud": ""
+        }
       }
     }
   }
