@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import warmWaves from "../../images/backdrops/warmWavesAndSplash.jpg";
 import ButtonHomePage from "../atoms/ButtonHomePage";
+import { artists } from "../../data/artists";
+import ArtistCarouselCard from "../molecules/ArtistCarouselCard";
 
 function FeaturedArtists() {
   const { t } = useTranslation();
@@ -16,11 +18,22 @@ function FeaturedArtists() {
         <p className="text-white text-8xl md:text-[167.82px] font-bold font-capMarker uppercase leading-[83%] md:leading-[100%] ">
           {t("home.featuredArtists.title")}
         </p>
+
+        <ArtistCarouselCard artist={artists[10]} />
       </div>
+
+      {/*<div className="flex relative z-10">
+        {artists.map((artist) => (
+          <ArtistCarouselCard key={artist.id} artist={artist}/>
+        ))}
+      </div>*/}
 
       {/* button */}
       <div className="absolute left-1/2 -translate-x-1/2 bottom-31 md:bottom-28 z-30">
-        <ButtonHomePage btnText={t("home.featuredArtists.btn")} linkTo="/artists" />
+        <ButtonHomePage
+          btnText={t("home.featuredArtists.btn")}
+          linkTo="/artists"
+        />
       </div>
     </div>
   );
