@@ -115,6 +115,15 @@
         "nameField": "név",
         "emailField": "email",
         "btn": "feliratkozás"
+      },
+      "footer": {
+        "copyrights": "© echopulse 2025",
+        "privacyPolicy": "adatvédelmi szabályzat",
+        "links": {
+          "instagram": "",
+          "facebook": "",
+          "soundcloud": ""
+        }
       }
     }
   }
