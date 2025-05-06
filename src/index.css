@@ -59,4 +59,12 @@
   .toggle-lowerLine {
     @apply translate-y-0 -rotate-45
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

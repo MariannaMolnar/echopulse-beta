@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
 import warmWaves from "../../images/backdrops/warmWavesAndSplash.jpg";
 import ButtonHomePage from "../atoms/ButtonHomePage";
-import { artists } from "../../data/artists";
-import ArtistCarouselCard from "../molecules/ArtistCarouselCard";
+import ArtistCarousel from "./ArtistCarousel";
 
 function FeaturedArtists() {
   const { t } = useTranslation();
@@ -20,16 +19,11 @@ function FeaturedArtists() {
         </p>
       </div>
       <div
-        className="absolute top-[285px]  left-[30px] right-0
+        className="absolute top-[285px]  left-0 right-0
                    md:relative md:top-auto md:bottom-auto md:left-auto md:right-auto md:mx-auto md:max-w-4xl md:px-4 md:mt-10 {/* Example desktop override */}
-                   z-10 overflow-x-auto overflow-y-hidden pb-1"
+                   z-10 overflow-x-auto overflow-y-hidden pb-1 no-scrollbar"
       >
-        <div className="inline-flex items-stretch gap-[20px] h-full pr-[30px]">
-          {/*<ArtistCarouselCard artist={artists[5]} />*/}
-          {artists.map((artist) => (
-            <ArtistCarouselCard key={artist.id} artist={artist} />
-          ))}
-        </div>
+        <ArtistCarousel />
       </div>
 
       {/* button */}
