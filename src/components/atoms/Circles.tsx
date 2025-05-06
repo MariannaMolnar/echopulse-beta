@@ -10,7 +10,7 @@ type CirclesProps = {
 function Circles({ items, activeIndex }: CirclesProps) {
   const stlyeClasses: Record<Status, string> = {
     inactive: "border-2 md:border-[3px] border-white",
-    active: "bg-sand",
+    active: "bg-sand border-2 md:border-[3px] border-sand",
   };
   return (
     <div className="flex justify-center items-center gap-7 md:gap-10 h-4 relative">
@@ -20,7 +20,7 @@ function Circles({ items, activeIndex }: CirclesProps) {
         return (
           <div
             key={item.id}
-            className={`w-2.5 h-2.5 md:w-3.5 md:h-3.5 rounded-full transition-all duration-300 ease-in-out ${dynamicStyle}`}
+            className={`w-2.5 h-2.5 md:w-3.5 md:h-3.5 rounded-full transition-colors duration-300 ease-in-out ${dynamicStyle}`}
           />
         );
       })}
