@@ -14,19 +14,23 @@ function FeaturedArtists() {
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
       {/* Centered Content Area */}
-      <div className="relative z-10 h-full flex flex-col items-center text-center md:mx-15 pt-33 md:pt-30 text-white">
-        <p className="text-white text-8xl md:text-[167.82px] font-bold font-capMarker uppercase leading-[83%] md:leading-[100%] ">
+      <div className="relative z-20  flex flex-col items-center text-center md:mx-15 pt-[135px] md:pt-30 text-white">
+        <p className="text-white text-[100px] md:text-[167.82px] font-bold font-capMarker uppercase leading-[83%] md:leading-[100%] ">
           {t("home.featuredArtists.title")}
         </p>
-
-        <ArtistCarouselCard artist={artists[10]} />
       </div>
-
-      {/*<div className="flex relative z-10">
-        {artists.map((artist) => (
-          <ArtistCarouselCard key={artist.id} artist={artist}/>
-        ))}
-      </div>*/}
+      <div
+        className="absolute top-[285px]  left-[30px] right-0
+                   md:relative md:top-auto md:bottom-auto md:left-auto md:right-auto md:mx-auto md:max-w-4xl md:px-4 md:mt-10 {/* Example desktop override */}
+                   z-10 overflow-x-auto overflow-y-hidden pb-1"
+      >
+        <div className="inline-flex items-stretch gap-[20px] h-full pr-[30px]">
+          {/*<ArtistCarouselCard artist={artists[5]} />*/}
+          {artists.map((artist) => (
+            <ArtistCarouselCard key={artist.id} artist={artist} />
+          ))}
+        </div>
+      </div>
 
       {/* button */}
       <div className="absolute left-1/2 -translate-x-1/2 bottom-31 md:bottom-28 z-30">
