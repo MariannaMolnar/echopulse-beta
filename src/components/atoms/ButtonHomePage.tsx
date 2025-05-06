@@ -9,7 +9,7 @@ function ButtonHomePage({ btnText, linkTo }: ButtonProps) {
   return (
     <div className="flex justify-center items-center w-57 md:w-75 h-12 md:h-16">
       <Link to={linkTo}>
-        <button className="w-57 md:w-75 rounded-full border-2 border-sand text-center text-sand text-base md:text-xl font-normal font-smallCaps uppercase leading-none md:leading-tight tracking-wider md:tracking-widest cursor-pointer px-7 py-[15px] md:px-9 md:py-4 hover:bg-sand hover:text-black transition-colors ease-out duration-400">
+        <button className="w-58 md:w-75 rounded-full border-2 border-sand text-center text-sand text-base md:text-xl font-normal font-smallCaps uppercase leading-none md:leading-tight tracking-wider md:tracking-widest cursor-pointer px-6 py-[15px] md:px-7 md:py-4 hover:bg-sand hover:text-black transition-colors ease-out duration-400">
           {btnText}
         </button>
       </Link>

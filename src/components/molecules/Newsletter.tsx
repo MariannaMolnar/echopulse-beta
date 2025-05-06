@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { PiSoundcloudLogoFill } from "react-icons/pi";
 import { useLanguage } from "../../context/LanguageContext";
+import { SupportedLanguages } from "../../i18n";
 
 function Newsletter() {
   const { t } = useTranslation();
@@ -12,6 +13,21 @@ function Newsletter() {
     name: "",
     email: "",
   });
+
+  const languageSpecificWidth: Record<SupportedLanguages, string> = {
+    en: "max-w-[587px]",
+    hu: "max-w-[640px]",
+  };
+
+  const languageSpecificTitleClasses: Record<SupportedLanguages, string> = {
+    en: "text-[103px] md:text-[150px] lg:text-[183.75px]",
+    hu: "text-[80px] md:text-[150px] lg:text-[161px]",
+  };
+
+  const languageSpecificDescClasses: Record<SupportedLanguages, string> = {
+    en: "text-[25.6px] md:text-4xl lg:text-[45px] tracking-[2.57px] md:tracking-[4.51px]",
+    hu: "text-[27px] md:text-4xl lg:text-[47px] tracking-[3.5px] md:tracking-[5px]",
+  };
 
   return (
     <div className="flex-shrink-0 relative w-screen h-dvh md:h-[847px] overflow-hidden">
@@ -23,11 +39,17 @@ function Newsletter() {
       <div className="relative z-20 grid grid-cols-1 md:grid-cols-2 h-full">
         {/* Left Column (desktop) - Title & description */}
         <div className="flex flex-col justify-start items-center md:items-end pt-[112px] md:pt-[260px] md:pr-46 lg:pr-51">
-          <div className={`w-full max-w-[587px] mx-auto md:mx-0`}>
-            <p className={`font-capMarker text-center md:text-left text-white text-[80px] md:text-[150px] lg:text-[183.75px] font-bold uppercase leading-[100%]`}>
+          <div
+            className={`w-full ${languageSpecificWidth[language]} mx-auto md:mx-0`}
+          >
+            <p
+              className={`font-capMarker text-center md:text-left text-white ${languageSpecificTitleClasses[language]} font-bold uppercase leading-[100%]`}
+            >
               {t("home.newsletter.title")}
             </p>
-            <p className={`font-smallCaps text-center md:text-left text-sand text-[25.6px] md:text-4xl lg:text-[45px] font-normal uppercase leading-[140%] md:leading-[130%] tracking-[2.57px] md:tracking-[4.51px]`}>
+            <p
+              className={`font-smallCaps text-center md:text-left text-sand ${languageSpecificDescClasses[language]} font-normal uppercase leading-[140%] md:leading-[130%]`}
+            >
               {t("home.newsletter.description")}
             </p>
           </div>
