@@ -16,8 +16,8 @@ export type SupportedLanguages = keyof typeof resources; // Export for use in La
 
 i18next.use(initReactI18next).init({
   resources,
-  lng: "en",
-  fallbackLng: "en",
+  lng: "hu",
+  fallbackLng: "hu",
   interpolation: {
     escapeValue: false,
   },
