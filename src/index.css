@@ -1,23 +1,25 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Bernier';
-  src: url('../src/assets/fonts/BERNIERDistressed-Regular.otf') format('opentype');
+  font-family: "Bernier";
+  src: url("../src/assets/fonts/BERNIERDistressed-Regular.otf")
+    format("opentype");
 }
 
 @font-face {
-  font-family: 'LarkeNeue';
-  src: url('../src/assets/fonts/Larke-Neue-Regular.ttf') format('truetype');
+  font-family: "LarkeNeue";
+  src: url("../src/assets/fonts/Larke-Neue-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'ZingSansRustLight';
-  src: url('../src/assets/fonts/ZingSansRustLDemo-Base.otf') format('opentype');
+  font-family: "ZingSansRustLight";
+  src: url("../src/assets/fonts/ZingSansRustLDemo-Base.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'NexaRustSansBlack';
-  src: url('../src/assets/fonts/NexaRustSans-Trial-Black2.ttf') format('truetype');
+  font-family: "NexaRustSansBlack";
+  src: url("../src/assets/fonts/NexaRustSans-Trial-Black2.ttf")
+    format("truetype");
 }
 
 @theme {
@@ -35,6 +37,17 @@
 }
 
 @layer utilities {
+  @keyframes infinite-scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      /* Move one full set of original items to the left */
+      /* This assumes you duplicate the list once in the JSX for the marquee */
+      transform: translateX(-50%);
+    }
+  }
+
   .bg-background-1 {
     background-image: url("./images/backdrops/blackSlate.jpg");
     background-size: cover;
@@ -49,14 +62,26 @@
   }
 
   .toggle-upperLine {
-    @apply translate-y-0 rotate-45
+    @apply translate-y-0 rotate-45;
   }
 
   .toggle-midLine {
-    @apply bg-transparent
+    @apply bg-transparent;
   }
 
   .toggle-lowerLine {
-    @apply translate-y-0 -rotate-45
+    @apply translate-y-0 -rotate-45;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .animate-infinite-scroll {
+    animation: infinite-scroll 40s linear infinite;
   }
 }

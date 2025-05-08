@@ -2,7 +2,7 @@ import { createContext, ReactNode, useContext, useEffect, useState } from "react
 import { SupportedLanguages } from "../i18n";
 import i18next from "../i18n";
 
-const DEFAULT_LANGUAGE: SupportedLanguages = "en";
+const DEFAULT_LANGUAGE: SupportedLanguages = "hu";
 
 interface LanguageContextType {
     language: SupportedLanguages;
