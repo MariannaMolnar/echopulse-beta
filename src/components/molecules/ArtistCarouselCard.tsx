@@ -6,7 +6,7 @@ type ArtistCarouselCardProps = {
 
 function ArtistCarouselCard({ artist }: ArtistCarouselCardProps) {
   return (
-    <div className="w-[243px] h-[280px] md:w-[286px] md:h-[330px] flex-shrink-0 relative overflow-hidden group cursor-pointer md:rounded-[20px]">
+    <div className="w-[243px] h-[280px] md:w-[286px] md:h-[330px] flex-shrink-0 relative overflow-hidden group cursor-pointer md:rounded-[20px] isolate">
       <img
         src={artist.image}
         className="w-[243px] h-[280px] md:w-[286px] md:h-[330px] left-0 top-0 absolute rounded-[16.993px] md:rounded-[20px] object-cover

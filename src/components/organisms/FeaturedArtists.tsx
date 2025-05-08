@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import warmWaves from "../../images/backdrops/warmWavesAndSplash.jpg";
 import ButtonHomePage from "../atoms/ButtonHomePage";
 import ArtistCarousel from "./ArtistCarousel";
+import { artists } from "../../data/artists";
 
 function FeaturedArtists() {
   const { t } = useTranslation();
@@ -20,10 +21,10 @@ function FeaturedArtists() {
       </div>
       <div
         className="absolute top-[285px]  left-0 right-0
-                   md:relative md:top-auto md:bottom-auto md:left-auto md:right-auto md:mx-auto md:max-w-4xl md:px-4 md:mt-10 {/* Example desktop override */}
-                   z-10 overflow-x-auto overflow-y-hidden pb-1 no-scrollbar"
+                  md:top-[238px] md:mx-auto
+                  z-10 overflow-x-auto overflow-y-hidden pb-1 no-scrollbar"
       >
-        <ArtistCarousel />
+        <ArtistCarousel items={artists}/>
       </div>
 
       {/* button */}
